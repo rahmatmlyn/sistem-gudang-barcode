@@ -1,0 +1,1001 @@
+sku,name,category,base_unit,min_stock
+SKU-00001,Susu Bubuk Kecil Tipe C,Minuman,kg,50
+SKU-00002,Tepung Terigu Kecil Tipe B,Sembako,pcs,10
+SKU-00003,Kecap Asin Kecil Tipe B,Sembako,pack,30
+SKU-00004,Tepung Beras Jumbo Tipe C,Sembako,kg,50
+SKU-00005,Bihun Sedang Tipe B,Makanan Instan,botol,20
+SKU-00006,Minuman Isotonik Jumbo Tipe D,Minuman,pcs,50
+SKU-00007,Kopi Bubuk Ekonomis Tipe A,Minuman,kg,30
+SKU-00008,Kopi Sachet Sedang Tipe D,Minuman,pcs,20
+SKU-00009,Tepung Terigu Kecil Tipe E,Sembako,pack,80
+SKU-00010,Tepung Beras Ekonomis Tipe C,Sembako,kg,24
+SKU-00011,Bihun Jumbo Tipe B,Makanan Instan,botol,20
+SKU-00012,Pasta Gigi Ekonomis Tipe D,Kebersihan,pack,20
+SKU-00013,Sabun Cuci Piring Jumbo Tipe D,Kebersihan,botol,10
+SKU-00014,Wafer Cokelat Sedang Tipe D,Camilan,pcs,100
+SKU-00015,Gula Pasir Besar Tipe C,Sembako,pcs,80
+SKU-00016,Air Mineral Jumbo Tipe E,Minuman,pcs,10
+SKU-00017,Teh Celup Besar Tipe B,Minuman,kg,10
+SKU-00018,Tisu Wajah Kecil Tipe E,Kebersihan,botol,20
+SKU-00019,Teh Celup Besar Tipe E,Minuman,kg,24
+SKU-00020,Minuman Isotonik Ekonomis Tipe C,Minuman,pack,10
+SKU-00021,Teh Bubuk Jumbo Tipe C,Minuman,pack,30
+SKU-00022,Pasta Gigi Jumbo Tipe D,Kebersihan,kg,80
+SKU-00023,Susu Kental Manis Jumbo Tipe C,Minuman,botol,20
+SKU-00024,Gula Pasir Jumbo Tipe C,Sembako,botol,50
+SKU-00025,Wafer Cokelat Ekonomis Tipe C,Camilan,botol,100
+SKU-00026,Teh Bubuk Ekonomis Tipe B,Minuman,botol,100
+SKU-00027,Kecap Manis Sedang Tipe B,Sembako,kg,30
+SKU-00028,Sampo Jumbo Tipe A,Kebersihan,pcs,30
+SKU-00029,Merica Bubuk Kecil Tipe E,Makanan Instan,botol,80
+SKU-00030,Pewangi Pakaian Ekonomis Tipe D,Kebersihan,pcs,24
+SKU-00031,Kaldu Ayam Jumbo Tipe D,Makanan Instan,kg,10
+SKU-00032,Merica Bubuk Sedang Tipe D,Makanan Instan,botol,80
+SKU-00033,Kopi Sachet Jumbo Tipe A,Minuman,botol,24
+SKU-00034,Tepung Terigu Jumbo Tipe B,Sembako,botol,20
+SKU-00035,Gula Merah Ekonomis Tipe E,Sembako,botol,30
+SKU-00036,Garam Dapur Besar Tipe D,Makanan Instan,pack,10
+SKU-00037,Biskuit Kelapa Jumbo Tipe D,Camilan,kg,80
+SKU-00038,Bihun Jumbo Tipe A,Makanan Instan,kg,80
+SKU-00039,Tisu Wajah Besar Tipe A,Kebersihan,pcs,10
+SKU-00040,Beras Medium Sedang Tipe B,Sembako,pack,10
+SKU-00041,Minuman Isotonik Kecil Tipe D,Minuman,pcs,100
+SKU-00042,Teh Celup Ekonomis Tipe B,Minuman,pcs,100
+SKU-00043,Pewangi Pakaian Jumbo Tipe A,Kebersihan,pack,50
+SKU-00044,Susu UHT Ekonomis Tipe E,Minuman,botol,100
+SKU-00045,Wafer Cokelat Besar Tipe D,Camilan,botol,10
+SKU-00046,Mi Instan Goreng Sedang Tipe E,Makanan Instan,botol,50
+SKU-00047,Susu Bubuk Besar Tipe D,Minuman,pcs,80
+SKU-00048,Mentega Jumbo Tipe C,Sembako,kg,24
+SKU-00049,Minyak Goreng Sedang Tipe B,Sembako,pack,50
+SKU-00050,Deterjen Cair Kecil Tipe A,Kebersihan,pack,24
+SKU-00051,Beras Premium Jumbo Tipe C,Sembako,botol,20
+SKU-00052,Air Mineral Sedang Tipe A,Minuman,pack,10
+SKU-00053,Pewangi Pakaian Ekonomis Tipe C,Kebersihan,kg,80
+SKU-00054,Deterjen Bubuk Ekonomis Tipe D,Kebersihan,botol,100
+SKU-00055,Biskuit Kelapa Jumbo Tipe C,Camilan,kg,10
+SKU-00056,Bihun Sedang Tipe E,Makanan Instan,kg,80
+SKU-00057,Biskuit Kelapa Sedang Tipe E,Camilan,botol,20
+SKU-00058,Mi Instan Kuah Kecil Tipe D,Makanan Instan,pack,50
+SKU-00059,Sampo Ekonomis Tipe D,Kebersihan,botol,20
+SKU-00060,Tepung Terigu Sedang Tipe B,Sembako,pcs,24
+SKU-00061,Kaldu Ayam Kecil Tipe D,Makanan Instan,kg,10
+SKU-00062,Tepung Terigu Besar Tipe E,Sembako,pack,24
+SKU-00063,Garam Dapur Ekonomis Tipe C,Makanan Instan,pcs,100
+SKU-00064,Pasta Gigi Besar Tipe B,Kebersihan,kg,100
+SKU-00065,Tisu Wajah Ekonomis Tipe A,Kebersihan,pcs,10
+SKU-00066,Air Mineral Jumbo Tipe D,Minuman,pack,10
+SKU-00067,Biskuit Kelapa Kecil Tipe D,Camilan,pcs,30
+SKU-00068,Beras Premium Besar Tipe A,Sembako,pack,50
+SKU-00069,Kopi Bubuk Sedang Tipe A,Minuman,kg,10
+SKU-00070,Sarden Kaleng Sedang Tipe C,Makanan Instan,kg,30
+SKU-00071,Susu Bubuk Jumbo Tipe D,Minuman,pack,50
+SKU-00072,Margarin Jumbo Tipe D,Sembako,kg,80
+SKU-00073,Kecap Manis Jumbo Tipe E,Sembako,pcs,24
+SKU-00074,Deterjen Cair Jumbo Tipe C,Kebersihan,pack,100
+SKU-00075,Gula Pasir Sedang Tipe B,Sembako,pcs,20
+SKU-00076,Susu Kental Manis Kecil Tipe E,Minuman,pack,50
+SKU-00077,Kaldu Ayam Besar Tipe E,Makanan Instan,pack,30
+SKU-00078,Teh Celup Sedang Tipe D,Minuman,kg,10
+SKU-00079,Wafer Cokelat Sedang Tipe B,Camilan,botol,100
+SKU-00080,Teh Celup Kecil Tipe C,Minuman,kg,80
+SKU-00081,Sampo Sedang Tipe C,Kebersihan,kg,10
+SKU-00082,Tepung Beras Besar Tipe E,Sembako,pack,24
+SKU-00083,Sampo Jumbo Tipe E,Kebersihan,pcs,10
+SKU-00084,Minyak Goreng Besar Tipe C,Sembako,botol,20
+SKU-00085,Susu Kental Manis Jumbo Tipe A,Minuman,kg,50
+SKU-00086,Saus Tomat Besar Tipe E,Sembako,pack,20
+SKU-00087,Susu Kental Manis Besar Tipe B,Minuman,pack,50
+SKU-00088,Susu UHT Ekonomis Tipe C,Minuman,kg,80
+SKU-00089,Saus Tomat Besar Tipe B,Sembako,kg,20
+SKU-00090,Kopi Sachet Jumbo Tipe B,Minuman,botol,100
+SKU-00091,Sampo Ekonomis Tipe A,Kebersihan,pack,50
+SKU-00092,Margarin Sedang Tipe D,Sembako,pack,30
+SKU-00093,Gula Merah Sedang Tipe E,Sembako,pcs,24
+SKU-00094,Kopi Sachet Kecil Tipe D,Minuman,kg,10
+SKU-00095,Mi Instan Kuah Ekonomis Tipe D,Makanan Instan,pack,30
+SKU-00096,Biskuit Kelapa Kecil Tipe E,Camilan,pcs,30
+SKU-00097,Sarden Kaleng Besar Tipe E,Makanan Instan,pack,10
+SKU-00098,Deterjen Cair Sedang Tipe A,Kebersihan,pack,80
+SKU-00099,Beras Premium Kecil Tipe D,Sembako,kg,80
+SKU-00100,Kecap Asin Jumbo Tipe D,Sembako,kg,50
+SKU-00101,Sabun Cuci Piring Besar Tipe C,Kebersihan,pack,24
+SKU-00102,Teh Bubuk Kecil Tipe E,Minuman,pcs,30
+SKU-00103,Gula Merah Besar Tipe E,Sembako,pack,100
+SKU-00104,Mi Instan Goreng Jumbo Tipe D,Makanan Instan,pcs,100
+SKU-00105,Deterjen Bubuk Besar Tipe E,Kebersihan,pack,20
+SKU-00106,Kornet Kaleng Sedang Tipe C,Makanan Instan,kg,10
+SKU-00107,Beras Premium Besar Tipe C,Sembako,botol,30
+SKU-00108,Bihun Besar Tipe D,Makanan Instan,pack,30
+SKU-00109,Sabun Cuci Piring Ekonomis Tipe E,Kebersihan,botol,30
+SKU-00110,Garam Dapur Kecil Tipe A,Makanan Instan,botol,10
+SKU-00111,Kaldu Ayam Besar Tipe A,Makanan Instan,pcs,50
+SKU-00112,Sampo Kecil Tipe C,Kebersihan,pcs,10
+SKU-00113,Pasta Gigi Ekonomis Tipe C,Kebersihan,kg,24
+SKU-00114,Beras Premium Jumbo Tipe D,Sembako,pcs,100
+SKU-00115,Beras Medium Jumbo Tipe B,Sembako,pack,10
+SKU-00116,Deterjen Bubuk Besar Tipe B,Kebersihan,kg,50
+SKU-00117,Kaldu Ayam Jumbo Tipe E,Makanan Instan,pcs,80
+SKU-00118,Kornet Kaleng Sedang Tipe D,Makanan Instan,kg,10
+SKU-00119,Sabun Mandi Besar Tipe E,Kebersihan,pcs,30
+SKU-00120,Wafer Cokelat Besar Tipe A,Camilan,pack,10
+SKU-00121,Kecap Asin Kecil Tipe A,Sembako,pack,80
+SKU-00122,Pasta Gigi Sedang Tipe B,Kebersihan,pcs,100
+SKU-00123,Air Mineral Jumbo Tipe C,Minuman,pack,100
+SKU-00124,Kopi Bubuk Jumbo Tipe E,Minuman,pcs,30
+SKU-00125,Kopi Sachet Besar Tipe D,Minuman,botol,20
+SKU-00126,Beras Medium Kecil Tipe D,Sembako,kg,50
+SKU-00127,Bihun Besar Tipe E,Makanan Instan,botol,24
+SKU-00128,Kopi Sachet Ekonomis Tipe A,Minuman,kg,10
+SKU-00129,Sabun Cuci Piring Kecil Tipe C,Kebersihan,kg,10
+SKU-00130,Kornet Kaleng Kecil Tipe E,Makanan Instan,pcs,30
+SKU-00131,Deterjen Cair Kecil Tipe E,Kebersihan,kg,100
+SKU-00132,Mi Instan Kuah Besar Tipe D,Makanan Instan,pack,50
+SKU-00133,Mi Instan Goreng Ekonomis Tipe A,Makanan Instan,botol,20
+SKU-00134,Kecap Manis Ekonomis Tipe E,Sembako,kg,100
+SKU-00135,Kecap Asin Sedang Tipe D,Sembako,botol,20
+SKU-00136,Tepung Terigu Jumbo Tipe C,Sembako,pcs,24
+SKU-00137,Garam Dapur Jumbo Tipe D,Makanan Instan,pack,100
+SKU-00138,Kopi Bubuk Besar Tipe A,Minuman,pcs,80
+SKU-00139,Merica Bubuk Besar Tipe D,Makanan Instan,kg,10
+SKU-00140,Kecap Asin Sedang Tipe B,Sembako,pack,30
+SKU-00141,Kaldu Ayam Jumbo Tipe B,Makanan Instan,pcs,80
+SKU-00142,Sabun Cuci Piring Besar Tipe E,Kebersihan,pack,10
+SKU-00143,Kaldu Ayam Besar Tipe B,Makanan Instan,pack,20
+SKU-00144,Merica Bubuk Besar Tipe E,Makanan Instan,botol,50
+SKU-00145,Beras Premium Sedang Tipe D,Sembako,pcs,80
+SKU-00146,Pewangi Pakaian Sedang Tipe B,Kebersihan,botol,50
+SKU-00147,Deterjen Cair Ekonomis Tipe E,Kebersihan,botol,100
+SKU-00148,Beras Medium Besar Tipe B,Sembako,kg,10
+SKU-00149,Beras Medium Besar Tipe E,Sembako,kg,50
+SKU-00150,Susu UHT Kecil Tipe D,Minuman,kg,10
+SKU-00151,Tisu Wajah Sedang Tipe E,Kebersihan,kg,10
+SKU-00152,Deterjen Cair Besar Tipe E,Kebersihan,kg,30
+SKU-00153,Sabun Mandi Sedang Tipe D,Kebersihan,kg,80
+SKU-00154,Mentega Ekonomis Tipe C,Sembako,botol,80
+SKU-00155,Mi Instan Goreng Jumbo Tipe C,Makanan Instan,botol,80
+SKU-00156,Kopi Bubuk Kecil Tipe A,Minuman,pack,50
+SKU-00157,Kornet Kaleng Sedang Tipe A,Makanan Instan,kg,24
+SKU-00158,Minuman Isotonik Besar Tipe B,Minuman,botol,24
+SKU-00159,Susu UHT Ekonomis Tipe D,Minuman,pcs,30
+SKU-00160,Merica Bubuk Ekonomis Tipe C,Makanan Instan,kg,80
+SKU-00161,Sampo Sedang Tipe D,Kebersihan,botol,10
+SKU-00162,Saus Sambal Besar Tipe E,Sembako,pack,30
+SKU-00163,Saus Sambal Besar Tipe A,Sembako,pack,20
+SKU-00164,Bihun Ekonomis Tipe B,Makanan Instan,pack,20
+SKU-00165,Susu Bubuk Kecil Tipe D,Minuman,pack,100
+SKU-00166,Teh Bubuk Besar Tipe E,Minuman,botol,24
+SKU-00167,Tepung Terigu Sedang Tipe E,Sembako,pcs,10
+SKU-00168,Teh Celup Kecil Tipe A,Minuman,kg,30
+SKU-00169,Saus Sambal Kecil Tipe D,Sembako,pcs,50
+SKU-00170,Tepung Terigu Jumbo Tipe D,Sembako,pack,20
+SKU-00171,Kecap Asin Kecil Tipe E,Sembako,pcs,30
+SKU-00172,Susu Kental Manis Besar Tipe C,Minuman,botol,24
+SKU-00173,Deterjen Bubuk Sedang Tipe E,Kebersihan,kg,24
+SKU-00174,Kornet Kaleng Kecil Tipe C,Makanan Instan,kg,30
+SKU-00175,Kopi Bubuk Sedang Tipe E,Minuman,pcs,30
+SKU-00176,Merica Bubuk Ekonomis Tipe E,Makanan Instan,pcs,30
+SKU-00177,Kornet Kaleng Ekonomis Tipe C,Makanan Instan,botol,80
+SKU-00178,Mi Instan Kuah Sedang Tipe C,Makanan Instan,kg,30
+SKU-00179,Mi Instan Kuah Ekonomis Tipe A,Makanan Instan,kg,50
+SKU-00180,Kopi Bubuk Kecil Tipe B,Minuman,botol,50
+SKU-00181,Tepung Beras Jumbo Tipe D,Sembako,pcs,24
+SKU-00182,Pasta Gigi Jumbo Tipe A,Kebersihan,pcs,10
+SKU-00183,Merica Bubuk Sedang Tipe C,Makanan Instan,pack,10
+SKU-00184,Pasta Gigi Ekonomis Tipe B,Kebersihan,pack,100
+SKU-00185,Mi Instan Kuah Kecil Tipe E,Makanan Instan,pcs,24
+SKU-00186,Merica Bubuk Besar Tipe A,Makanan Instan,kg,30
+SKU-00187,Tisu Wajah Sedang Tipe D,Kebersihan,pcs,30
+SKU-00188,Kecap Manis Kecil Tipe A,Sembako,kg,24
+SKU-00189,Kecap Manis Sedang Tipe A,Sembako,kg,80
+SKU-00190,Sabun Mandi Kecil Tipe C,Kebersihan,pack,20
+SKU-00191,Pewangi Pakaian Sedang Tipe A,Kebersihan,pack,24
+SKU-00192,Sarden Kaleng Kecil Tipe E,Makanan Instan,pack,10
+SKU-00193,Susu UHT Jumbo Tipe A,Minuman,botol,20
+SKU-00194,Teh Celup Ekonomis Tipe A,Minuman,pack,50
+SKU-00195,Margarin Ekonomis Tipe C,Sembako,pcs,10
+SKU-00196,Gula Merah Kecil Tipe B,Sembako,pcs,50
+SKU-00197,Mentega Ekonomis Tipe B,Sembako,botol,20
+SKU-00198,Bihun Kecil Tipe B,Makanan Instan,kg,50
+SKU-00199,Kaldu Ayam Kecil Tipe B,Makanan Instan,pcs,24
+SKU-00200,Tepung Beras Sedang Tipe A,Sembako,pack,80
+SKU-00201,Mi Instan Goreng Ekonomis Tipe B,Makanan Instan,kg,24
+SKU-00202,Deterjen Bubuk Jumbo Tipe E,Kebersihan,botol,30
+SKU-00203,Mentega Sedang Tipe E,Sembako,pcs,30
+SKU-00204,Mentega Besar Tipe A,Sembako,kg,10
+SKU-00205,Kornet Kaleng Jumbo Tipe A,Makanan Instan,pcs,24
+SKU-00206,Susu UHT Jumbo Tipe D,Minuman,pcs,80
+SKU-00207,Beras Premium Besar Tipe D,Sembako,pack,30
+SKU-00208,Tepung Beras Ekonomis Tipe D,Sembako,kg,80
+SKU-00209,Pewangi Pakaian Jumbo Tipe C,Kebersihan,pcs,80
+SKU-00210,Gula Merah Kecil Tipe C,Sembako,pack,10
+SKU-00211,Tepung Terigu Kecil Tipe C,Sembako,kg,24
+SKU-00212,Susu UHT Besar Tipe D,Minuman,pack,50
+SKU-00213,Kecap Manis Ekonomis Tipe B,Sembako,pcs,30
+SKU-00214,Teh Celup Ekonomis Tipe E,Minuman,pcs,20
+SKU-00215,Deterjen Bubuk Kecil Tipe A,Kebersihan,botol,80
+SKU-00216,Sampo Besar Tipe E,Kebersihan,botol,10
+SKU-00217,Saus Tomat Jumbo Tipe D,Sembako,kg,50
+SKU-00218,Air Mineral Sedang Tipe E,Minuman,botol,100
+SKU-00219,Sampo Jumbo Tipe D,Kebersihan,pack,100
+SKU-00220,Sabun Mandi Ekonomis Tipe A,Kebersihan,pack,10
+SKU-00221,Gula Merah Jumbo Tipe D,Sembako,botol,30
+SKU-00222,Pewangi Pakaian Kecil Tipe E,Kebersihan,pack,80
+SKU-00223,Minuman Isotonik Ekonomis Tipe B,Minuman,kg,50
+SKU-00224,Sabun Mandi Ekonomis Tipe D,Kebersihan,kg,10
+SKU-00225,Merica Bubuk Besar Tipe B,Makanan Instan,kg,20
+SKU-00226,Kecap Manis Sedang Tipe C,Sembako,pack,20
+SKU-00227,Garam Dapur Jumbo Tipe B,Makanan Instan,botol,80
+SKU-00228,Kopi Bubuk Jumbo Tipe D,Minuman,kg,100
+SKU-00229,Bihun Besar Tipe C,Makanan Instan,pack,80
+SKU-00230,Margarin Besar Tipe E,Sembako,pcs,20
+SKU-00231,Susu UHT Jumbo Tipe E,Minuman,botol,50
+SKU-00232,Mi Instan Goreng Sedang Tipe C,Makanan Instan,pack,24
+SKU-00233,Susu Bubuk Besar Tipe E,Minuman,kg,10
+SKU-00234,Mi Instan Goreng Sedang Tipe A,Makanan Instan,botol,20
+SKU-00235,Sabun Cuci Piring Kecil Tipe B,Kebersihan,pcs,100
+SKU-00236,Minyak Goreng Sedang Tipe A,Sembako,botol,20
+SKU-00237,Teh Bubuk Ekonomis Tipe D,Minuman,botol,30
+SKU-00238,Saus Sambal Jumbo Tipe C,Sembako,kg,10
+SKU-00239,Kecap Manis Besar Tipe E,Sembako,pack,10
+SKU-00240,Air Mineral Ekonomis Tipe C,Minuman,pcs,80
+SKU-00241,Saus Sambal Ekonomis Tipe A,Sembako,pcs,50
+SKU-00242,Susu Bubuk Kecil Tipe E,Minuman,pack,50
+SKU-00243,Tepung Terigu Ekonomis Tipe A,Sembako,botol,10
+SKU-00244,Biskuit Kelapa Ekonomis Tipe D,Camilan,kg,24
+SKU-00245,Kecap Manis Jumbo Tipe B,Sembako,pack,24
+SKU-00246,Kopi Bubuk Kecil Tipe E,Minuman,pack,100
+SKU-00247,Tepung Beras Sedang Tipe B,Sembako,botol,20
+SKU-00248,Susu UHT Ekonomis Tipe B,Minuman,botol,10
+SKU-00249,Tepung Beras Jumbo Tipe A,Sembako,kg,100
+SKU-00250,Beras Medium Ekonomis Tipe C,Sembako,pack,10
+SKU-00251,Saus Tomat Sedang Tipe C,Sembako,pcs,24
+SKU-00252,Sarden Kaleng Jumbo Tipe D,Makanan Instan,kg,20
+SKU-00253,Wafer Cokelat Kecil Tipe E,Camilan,pcs,10
+SKU-00254,Gula Pasir Jumbo Tipe E,Sembako,botol,80
+SKU-00255,Beras Premium Sedang Tipe C,Sembako,pcs,100
+SKU-00256,Gula Pasir Sedang Tipe A,Sembako,pack,20
+SKU-00257,Kopi Sachet Kecil Tipe E,Minuman,botol,20
+SKU-00258,Margarin Besar Tipe D,Sembako,pack,80
+SKU-00259,Kopi Sachet Ekonomis Tipe E,Minuman,pack,80
+SKU-00260,Kopi Sachet Jumbo Tipe C,Minuman,pack,20
+SKU-00261,Kopi Bubuk Besar Tipe E,Minuman,pcs,24
+SKU-00262,Sampo Besar Tipe A,Kebersihan,botol,24
+SKU-00263,Kopi Bubuk Kecil Tipe C,Minuman,pcs,50
+SKU-00264,Saus Tomat Kecil Tipe A,Sembako,pack,30
+SKU-00265,Saus Tomat Sedang Tipe A,Sembako,botol,10
+SKU-00266,Kornet Kaleng Ekonomis Tipe A,Makanan Instan,pcs,80
+SKU-00267,Mi Instan Goreng Ekonomis Tipe C,Makanan Instan,botol,10
+SKU-00268,Saus Sambal Jumbo Tipe B,Sembako,botol,24
+SKU-00269,Teh Bubuk Besar Tipe D,Minuman,pack,20
+SKU-00270,Beras Medium Jumbo Tipe A,Sembako,kg,24
+SKU-00271,Sabun Cuci Piring Jumbo Tipe E,Kebersihan,pack,50
+SKU-00272,Susu UHT Sedang Tipe D,Minuman,kg,50
+SKU-00273,Kopi Sachet Besar Tipe C,Minuman,pcs,30
+SKU-00274,Kopi Bubuk Ekonomis Tipe D,Minuman,botol,24
+SKU-00275,Deterjen Bubuk Jumbo Tipe C,Kebersihan,botol,24
+SKU-00276,Merica Bubuk Jumbo Tipe D,Makanan Instan,pcs,80
+SKU-00277,Kaldu Ayam Ekonomis Tipe E,Makanan Instan,pack,20
+SKU-00278,Sabun Mandi Sedang Tipe B,Kebersihan,botol,100
+SKU-00279,Mi Instan Kuah Ekonomis Tipe B,Makanan Instan,kg,20
+SKU-00280,Mi Instan Goreng Jumbo Tipe A,Makanan Instan,pcs,24
+SKU-00281,Teh Bubuk Sedang Tipe D,Minuman,kg,20
+SKU-00282,Beras Premium Sedang Tipe B,Sembako,pack,10
+SKU-00283,Minyak Goreng Ekonomis Tipe D,Sembako,pcs,10
+SKU-00284,Kecap Manis Ekonomis Tipe C,Sembako,pack,80
+SKU-00285,Kecap Manis Jumbo Tipe D,Sembako,pack,20
+SKU-00286,Margarin Besar Tipe C,Sembako,botol,20
+SKU-00287,Minyak Goreng Ekonomis Tipe B,Sembako,pcs,80
+SKU-00288,Gula Pasir Jumbo Tipe B,Sembako,botol,20
+SKU-00289,Tisu Wajah Jumbo Tipe A,Kebersihan,pack,10
+SKU-00290,Saus Sambal Besar Tipe B,Sembako,pack,100
+SKU-00291,Deterjen Cair Kecil Tipe B,Kebersihan,pack,50
+SKU-00292,Kornet Kaleng Sedang Tipe E,Makanan Instan,kg,20
+SKU-00293,Kaldu Ayam Besar Tipe D,Makanan Instan,pcs,10
+SKU-00294,Saus Tomat Sedang Tipe D,Sembako,botol,20
+SKU-00295,Beras Medium Sedang Tipe A,Sembako,kg,10
+SKU-00296,Wafer Cokelat Jumbo Tipe E,Camilan,botol,80
+SKU-00297,Mentega Sedang Tipe A,Sembako,kg,80
+SKU-00298,Margarin Jumbo Tipe C,Sembako,pcs,10
+SKU-00299,Tepung Terigu Sedang Tipe C,Sembako,pack,30
+SKU-00300,Kopi Bubuk Besar Tipe C,Minuman,botol,30
+SKU-00301,Sabun Cuci Piring Kecil Tipe E,Kebersihan,botol,80
+SKU-00302,Teh Bubuk Jumbo Tipe B,Minuman,kg,50
+SKU-00303,Beras Medium Ekonomis Tipe D,Sembako,kg,50
+SKU-00304,Minyak Goreng Ekonomis Tipe C,Sembako,pcs,80
+SKU-00305,Mi Instan Goreng Besar Tipe C,Makanan Instan,pack,50
+SKU-00306,Teh Bubuk Sedang Tipe C,Minuman,botol,10
+SKU-00307,Saus Sambal Sedang Tipe B,Sembako,botol,20
+SKU-00308,Minuman Isotonik Ekonomis Tipe A,Minuman,pack,50
+SKU-00309,Deterjen Cair Jumbo Tipe A,Kebersihan,botol,50
+SKU-00310,Sarden Kaleng Ekonomis Tipe C,Makanan Instan,botol,24
+SKU-00311,Susu Kental Manis Sedang Tipe D,Minuman,botol,10
+SKU-00312,Kornet Kaleng Ekonomis Tipe D,Makanan Instan,pack,20
+SKU-00313,Minyak Goreng Kecil Tipe A,Sembako,pack,20
+SKU-00314,Saus Tomat Jumbo Tipe E,Sembako,botol,80
+SKU-00315,Gula Pasir Besar Tipe D,Sembako,botol,30
+SKU-00316,Sarden Kaleng Sedang Tipe E,Makanan Instan,kg,50
+SKU-00317,Gula Pasir Ekonomis Tipe D,Sembako,botol,10
+SKU-00318,Mi Instan Kuah Jumbo Tipe B,Makanan Instan,pcs,10
+SKU-00319,Pasta Gigi Besar Tipe E,Kebersihan,pcs,80
+SKU-00320,Mi Instan Goreng Kecil Tipe D,Makanan Instan,pack,10
+SKU-00321,Kaldu Ayam Kecil Tipe E,Makanan Instan,kg,20
+SKU-00322,Sabun Cuci Piring Besar Tipe D,Kebersihan,pack,20
+SKU-00323,Deterjen Bubuk Sedang Tipe D,Kebersihan,kg,20
+SKU-00324,Susu Kental Manis Ekonomis Tipe A,Minuman,pack,10
+SKU-00325,Tepung Beras Besar Tipe B,Sembako,kg,50
+SKU-00326,Sabun Mandi Sedang Tipe E,Kebersihan,kg,80
+SKU-00327,Biskuit Kelapa Sedang Tipe A,Camilan,pack,80
+SKU-00328,Minyak Goreng Jumbo Tipe D,Sembako,botol,30
+SKU-00329,Tepung Beras Besar Tipe C,Sembako,kg,10
+SKU-00330,Tisu Wajah Sedang Tipe A,Kebersihan,kg,30
+SKU-00331,Wafer Cokelat Jumbo Tipe D,Camilan,kg,20
+SKU-00332,Saus Sambal Jumbo Tipe A,Sembako,pack,20
+SKU-00333,Kecap Manis Kecil Tipe B,Sembako,botol,30
+SKU-00334,Gula Merah Kecil Tipe E,Sembako,pack,24
+SKU-00335,Wafer Cokelat Ekonomis Tipe D,Camilan,kg,24
+SKU-00336,Bihun Sedang Tipe A,Makanan Instan,pack,10
+SKU-00337,Saus Tomat Kecil Tipe C,Sembako,pcs,30
+SKU-00338,Teh Bubuk Besar Tipe A,Minuman,kg,80
+SKU-00339,Mentega Kecil Tipe E,Sembako,pcs,10
+SKU-00340,Teh Bubuk Kecil Tipe B,Minuman,pack,50
+SKU-00341,Sarden Kaleng Jumbo Tipe E,Makanan Instan,pack,50
+SKU-00342,Kecap Manis Besar Tipe C,Sembako,kg,10
+SKU-00343,Pewangi Pakaian Sedang Tipe C,Kebersihan,botol,24
+SKU-00344,Gula Merah Jumbo Tipe A,Sembako,pack,20
+SKU-00345,Sabun Cuci Piring Sedang Tipe D,Kebersihan,kg,50
+SKU-00346,Margarin Sedang Tipe B,Sembako,botol,100
+SKU-00347,Kecap Asin Kecil Tipe C,Sembako,botol,10
+SKU-00348,Mi Instan Goreng Besar Tipe B,Makanan Instan,pcs,10
+SKU-00349,Minuman Isotonik Besar Tipe C,Minuman,botol,100
+SKU-00350,Minyak Goreng Jumbo Tipe E,Sembako,pack,20
+SKU-00351,Sarden Kaleng Jumbo Tipe C,Makanan Instan,kg,20
+SKU-00352,Kecap Asin Sedang Tipe E,Sembako,botol,80
+SKU-00353,Sarden Kaleng Ekonomis Tipe A,Makanan Instan,pcs,100
+SKU-00354,Susu Bubuk Jumbo Tipe A,Minuman,kg,50
+SKU-00355,Sabun Mandi Besar Tipe C,Kebersihan,pcs,80
+SKU-00356,Susu Bubuk Jumbo Tipe B,Minuman,kg,10
+SKU-00357,Teh Celup Kecil Tipe D,Minuman,botol,50
+SKU-00358,Garam Dapur Kecil Tipe B,Makanan Instan,pack,10
+SKU-00359,Susu Kental Manis Kecil Tipe A,Minuman,kg,80
+SKU-00360,Sabun Cuci Piring Jumbo Tipe C,Kebersihan,pcs,20
+SKU-00361,Beras Medium Jumbo Tipe E,Sembako,botol,80
+SKU-00362,Beras Medium Besar Tipe A,Sembako,pack,30
+SKU-00363,Beras Medium Jumbo Tipe C,Sembako,pcs,10
+SKU-00364,Mentega Kecil Tipe B,Sembako,pack,80
+SKU-00365,Tisu Wajah Besar Tipe D,Kebersihan,kg,50
+SKU-00366,Susu UHT Jumbo Tipe B,Minuman,botol,30
+SKU-00367,Mi Instan Goreng Ekonomis Tipe E,Makanan Instan,pcs,24
+SKU-00368,Kornet Kaleng Jumbo Tipe E,Makanan Instan,botol,10
+SKU-00369,Tepung Beras Kecil Tipe B,Sembako,pcs,80
+SKU-00370,Minuman Isotonik Sedang Tipe A,Minuman,botol,100
+SKU-00371,Saus Sambal Sedang Tipe E,Sembako,botol,50
+SKU-00372,Sarden Kaleng Kecil Tipe B,Makanan Instan,botol,80
+SKU-00373,Kecap Asin Sedang Tipe A,Sembako,pack,24
+SKU-00374,Susu Kental Manis Sedang Tipe A,Minuman,pcs,50
+SKU-00375,Garam Dapur Kecil Tipe D,Makanan Instan,pcs,30
+SKU-00376,Gula Pasir Besar Tipe A,Sembako,botol,100
+SKU-00377,Kopi Bubuk Ekonomis Tipe C,Minuman,kg,80
+SKU-00378,Bihun Jumbo Tipe E,Makanan Instan,pack,24
+SKU-00379,Pasta Gigi Kecil Tipe C,Kebersihan,pack,20
+SKU-00380,Sabun Mandi Jumbo Tipe C,Kebersihan,botol,30
+SKU-00381,Mentega Ekonomis Tipe A,Sembako,botol,80
+SKU-00382,Beras Medium Besar Tipe C,Sembako,botol,20
+SKU-00383,Pasta Gigi Ekonomis Tipe E,Kebersihan,pcs,50
+SKU-00384,Sarden Kaleng Ekonomis Tipe B,Makanan Instan,botol,20
+SKU-00385,Teh Bubuk Jumbo Tipe E,Minuman,botol,10
+SKU-00386,Minyak Goreng Jumbo Tipe C,Sembako,pack,24
+SKU-00387,Gula Pasir Kecil Tipe E,Sembako,pack,80
+SKU-00388,Pewangi Pakaian Ekonomis Tipe E,Kebersihan,kg,24
+SKU-00389,Tepung Beras Kecil Tipe C,Sembako,pcs,100
+SKU-00390,Garam Dapur Sedang Tipe B,Makanan Instan,botol,24
+SKU-00391,Saus Tomat Sedang Tipe B,Sembako,pcs,100
+SKU-00392,Merica Bubuk Kecil Tipe A,Makanan Instan,botol,10
+SKU-00393,Deterjen Bubuk Besar Tipe A,Kebersihan,pack,30
+SKU-00394,Tepung Terigu Besar Tipe A,Sembako,botol,20
+SKU-00395,Sabun Mandi Sedang Tipe A,Kebersihan,pack,10
+SKU-00396,Mentega Besar Tipe D,Sembako,pcs,30
+SKU-00397,Beras Medium Sedang Tipe C,Sembako,botol,80
+SKU-00398,Sabun Cuci Piring Kecil Tipe D,Kebersihan,botol,50
+SKU-00399,Beras Premium Kecil Tipe B,Sembako,botol,20
+SKU-00400,Garam Dapur Sedang Tipe C,Makanan Instan,pack,50
+SKU-00401,Teh Celup Kecil Tipe E,Minuman,pcs,100
+SKU-00402,Sarden Kaleng Ekonomis Tipe E,Makanan Instan,pack,24
+SKU-00403,Mi Instan Goreng Jumbo Tipe B,Makanan Instan,pcs,100
+SKU-00404,Wafer Cokelat Sedang Tipe E,Camilan,kg,30
+SKU-00405,Susu Kental Manis Ekonomis Tipe B,Minuman,pack,20
+SKU-00406,Deterjen Cair Ekonomis Tipe B,Kebersihan,pcs,100
+SKU-00407,Biskuit Kelapa Ekonomis Tipe A,Camilan,botol,80
+SKU-00408,Gula Pasir Ekonomis Tipe E,Sembako,pcs,20
+SKU-00409,Saus Sambal Kecil Tipe B,Sembako,pcs,10
+SKU-00410,Minyak Goreng Besar Tipe B,Sembako,kg,10
+SKU-00411,Merica Bubuk Ekonomis Tipe D,Makanan Instan,pcs,10
+SKU-00412,Wafer Cokelat Sedang Tipe C,Camilan,pcs,10
+SKU-00413,Teh Celup Sedang Tipe B,Minuman,kg,30
+SKU-00414,Mi Instan Kuah Jumbo Tipe E,Makanan Instan,pack,10
+SKU-00415,Gula Merah Besar Tipe C,Sembako,kg,24
+SKU-00416,Kornet Kaleng Jumbo Tipe D,Makanan Instan,kg,100
+SKU-00417,Bihun Ekonomis Tipe C,Makanan Instan,pack,100
+SKU-00418,Bihun Ekonomis Tipe A,Makanan Instan,pack,100
+SKU-00419,Kornet Kaleng Jumbo Tipe C,Makanan Instan,kg,20
+SKU-00420,Pasta Gigi Kecil Tipe B,Kebersihan,pcs,20
+SKU-00421,Margarin Jumbo Tipe B,Sembako,kg,24
+SKU-00422,Tisu Wajah Besar Tipe E,Kebersihan,pcs,50
+SKU-00423,Mi Instan Goreng Sedang Tipe B,Makanan Instan,kg,24
+SKU-00424,Sampo Sedang Tipe E,Kebersihan,pack,100
+SKU-00425,Beras Premium Kecil Tipe E,Sembako,pcs,20
+SKU-00426,Susu UHT Sedang Tipe E,Minuman,pack,100
+SKU-00427,Bihun Sedang Tipe C,Makanan Instan,pack,10
+SKU-00428,Teh Bubuk Ekonomis Tipe E,Minuman,botol,50
+SKU-00429,Mentega Ekonomis Tipe D,Sembako,pack,50
+SKU-00430,Gula Pasir Jumbo Tipe D,Sembako,botol,24
+SKU-00431,Mentega Sedang Tipe C,Sembako,botol,10
+SKU-00432,Tepung Beras Ekonomis Tipe B,Sembako,pcs,10
+SKU-00433,Saus Sambal Kecil Tipe C,Sembako,pack,20
+SKU-00434,Air Mineral Sedang Tipe C,Minuman,kg,20
+SKU-00435,Deterjen Bubuk Ekonomis Tipe A,Kebersihan,kg,30
+SKU-00436,Gula Merah Sedang Tipe D,Sembako,pack,50
+SKU-00437,Gula Merah Ekonomis Tipe C,Sembako,pcs,30
+SKU-00438,Sampo Jumbo Tipe C,Kebersihan,kg,80
+SKU-00439,Mi Instan Goreng Besar Tipe E,Makanan Instan,pcs,24
+SKU-00440,Saus Tomat Kecil Tipe D,Sembako,pcs,20
+SKU-00441,Tisu Wajah Kecil Tipe A,Kebersihan,pack,10
+SKU-00442,Beras Premium Ekonomis Tipe B,Sembako,kg,24
+SKU-00443,Sabun Cuci Piring Sedang Tipe B,Kebersihan,pack,10
+SKU-00444,Tepung Beras Sedang Tipe D,Sembako,kg,30
+SKU-00445,Susu Kental Manis Sedang Tipe C,Minuman,pcs,20
+SKU-00446,Minyak Goreng Ekonomis Tipe A,Sembako,kg,50
+SKU-00447,Deterjen Bubuk Sedang Tipe B,Kebersihan,kg,20
+SKU-00448,Bihun Kecil Tipe A,Makanan Instan,pack,30
+SKU-00449,Gula Pasir Ekonomis Tipe C,Sembako,pack,50
+SKU-00450,Pewangi Pakaian Ekonomis Tipe B,Kebersihan,kg,20
+SKU-00451,Gula Pasir Kecil Tipe D,Sembako,botol,50
+SKU-00452,Kecap Asin Besar Tipe A,Sembako,pcs,10
+SKU-00453,Garam Dapur Sedang Tipe D,Makanan Instan,pack,80
+SKU-00454,Pasta Gigi Kecil Tipe A,Kebersihan,botol,24
+SKU-00455,Mi Instan Goreng Kecil Tipe E,Makanan Instan,pack,50
+SKU-00456,Susu Kental Manis Sedang Tipe B,Minuman,kg,80
+SKU-00457,Pasta Gigi Kecil Tipe D,Kebersihan,kg,20
+SKU-00458,Pewangi Pakaian Kecil Tipe C,Kebersihan,kg,10
+SKU-00459,Mentega Jumbo Tipe E,Sembako,pack,20
+SKU-00460,Sabun Mandi Kecil Tipe A,Kebersihan,botol,50
+SKU-00461,Beras Premium Ekonomis Tipe C,Sembako,pack,30
+SKU-00462,Saus Sambal Jumbo Tipe D,Sembako,pack,30
+SKU-00463,Kaldu Ayam Kecil Tipe A,Makanan Instan,pack,20
+SKU-00464,Tisu Wajah Sedang Tipe C,Kebersihan,pcs,30
+SKU-00465,Air Mineral Kecil Tipe C,Minuman,botol,100
+SKU-00466,Susu Bubuk Sedang Tipe B,Minuman,botol,50
+SKU-00467,Sampo Besar Tipe B,Kebersihan,pcs,30
+SKU-00468,Tepung Terigu Besar Tipe B,Sembako,pack,80
+SKU-00469,Kecap Asin Ekonomis Tipe D,Sembako,pcs,24
+SKU-00470,Pewangi Pakaian Kecil Tipe A,Kebersihan,pcs,100
+SKU-00471,Merica Bubuk Kecil Tipe D,Makanan Instan,botol,24
+SKU-00472,Gula Pasir Kecil Tipe B,Sembako,pack,20
+SKU-00473,Bihun Kecil Tipe D,Makanan Instan,botol,24
+SKU-00474,Sabun Cuci Piring Sedang Tipe C,Kebersihan,botol,20
+SKU-00475,Gula Pasir Ekonomis Tipe A,Sembako,pcs,24
+SKU-00476,Tisu Wajah Kecil Tipe B,Kebersihan,botol,20
+SKU-00477,Mi Instan Kuah Ekonomis Tipe E,Makanan Instan,pcs,20
+SKU-00478,Garam Dapur Besar Tipe C,Makanan Instan,kg,50
+SKU-00479,Garam Dapur Besar Tipe E,Makanan Instan,pcs,20
+SKU-00480,Deterjen Cair Ekonomis Tipe D,Kebersihan,pack,10
+SKU-00481,Beras Medium Jumbo Tipe D,Sembako,pcs,30
+SKU-00482,Gula Merah Besar Tipe D,Sembako,pcs,20
+SKU-00483,Minuman Isotonik Ekonomis Tipe D,Minuman,pack,50
+SKU-00484,Beras Premium Jumbo Tipe E,Sembako,pack,10
+SKU-00485,Minuman Isotonik Jumbo Tipe A,Minuman,pack,50
+SKU-00486,Margarin Sedang Tipe E,Sembako,pack,24
+SKU-00487,Mi Instan Kuah Sedang Tipe E,Makanan Instan,pack,10
+SKU-00488,Pasta Gigi Sedang Tipe D,Kebersihan,pcs,80
+SKU-00489,Susu UHT Besar Tipe B,Minuman,pcs,24
+SKU-00490,Kopi Bubuk Jumbo Tipe B,Minuman,kg,10
+SKU-00491,Deterjen Cair Ekonomis Tipe C,Kebersihan,botol,24
+SKU-00492,Teh Bubuk Besar Tipe B,Minuman,pcs,20
+SKU-00493,Air Mineral Ekonomis Tipe A,Minuman,botol,24
+SKU-00494,Teh Celup Sedang Tipe C,Minuman,kg,50
+SKU-00495,Deterjen Cair Besar Tipe A,Kebersihan,pcs,20
+SKU-00496,Tisu Wajah Jumbo Tipe E,Kebersihan,pcs,10
+SKU-00497,Margarin Besar Tipe A,Sembako,pcs,80
+SKU-00498,Wafer Cokelat Ekonomis Tipe B,Camilan,pack,20
+SKU-00499,Gula Merah Sedang Tipe B,Sembako,pcs,100
+SKU-00500,Sabun Mandi Sedang Tipe C,Kebersihan,pack,50
+SKU-00501,Minyak Goreng Sedang Tipe E,Sembako,pack,50
+SKU-00502,Tisu Wajah Ekonomis Tipe C,Kebersihan,pcs,24
+SKU-00503,Merica Bubuk Jumbo Tipe E,Makanan Instan,botol,100
+SKU-00504,Kopi Bubuk Kecil Tipe D,Minuman,kg,10
+SKU-00505,Teh Celup Sedang Tipe E,Minuman,botol,50
+SKU-00506,Kecap Manis Jumbo Tipe C,Sembako,botol,100
+SKU-00507,Kopi Bubuk Jumbo Tipe A,Minuman,kg,30
+SKU-00508,Sabun Mandi Ekonomis Tipe E,Kebersihan,botol,80
+SKU-00509,Sampo Kecil Tipe D,Kebersihan,pack,80
+SKU-00510,Susu Bubuk Ekonomis Tipe C,Minuman,pcs,10
+SKU-00511,Kecap Manis Besar Tipe A,Sembako,pcs,80
+SKU-00512,Mi Instan Kuah Jumbo Tipe C,Makanan Instan,kg,100
+SKU-00513,Biskuit Kelapa Besar Tipe C,Camilan,pcs,100
+SKU-00514,Margarin Sedang Tipe A,Sembako,botol,100
+SKU-00515,Mi Instan Kuah Kecil Tipe B,Makanan Instan,botol,24
+SKU-00516,Saus Sambal Sedang Tipe C,Sembako,kg,100
+SKU-00517,Merica Bubuk Jumbo Tipe B,Makanan Instan,pack,50
+SKU-00518,Deterjen Cair Jumbo Tipe B,Kebersihan,pcs,30
+SKU-00519,Merica Bubuk Besar Tipe C,Makanan Instan,pack,80
+SKU-00520,Minyak Goreng Kecil Tipe E,Sembako,pcs,10
+SKU-00521,Kecap Manis Kecil Tipe C,Sembako,pcs,30
+SKU-00522,Sarden Kaleng Jumbo Tipe A,Makanan Instan,pack,30
+SKU-00523,Sampo Sedang Tipe B,Kebersihan,pcs,20
+SKU-00524,Kecap Manis Ekonomis Tipe D,Sembako,kg,50
+SKU-00525,Air Mineral Besar Tipe C,Minuman,botol,50
+SKU-00526,Pasta Gigi Jumbo Tipe C,Kebersihan,pcs,24
+SKU-00527,Mi Instan Goreng Kecil Tipe A,Makanan Instan,kg,20
+SKU-00528,Tisu Wajah Jumbo Tipe C,Kebersihan,kg,30
+SKU-00529,Kecap Asin Ekonomis Tipe B,Sembako,kg,50
+SKU-00530,Susu UHT Kecil Tipe B,Minuman,kg,50
+SKU-00531,Susu Bubuk Besar Tipe C,Minuman,botol,50
+SKU-00532,Mentega Sedang Tipe D,Sembako,pack,100
+SKU-00533,Tisu Wajah Jumbo Tipe B,Kebersihan,botol,100
+SKU-00534,Garam Dapur Jumbo Tipe C,Makanan Instan,kg,20
+SKU-00535,Biskuit Kelapa Ekonomis Tipe B,Camilan,pack,24
+SKU-00536,Sarden Kaleng Sedang Tipe B,Makanan Instan,pcs,20
+SKU-00537,Sabun Mandi Besar Tipe B,Kebersihan,pack,20
+SKU-00538,Deterjen Bubuk Besar Tipe D,Kebersihan,kg,10
+SKU-00539,Wafer Cokelat Ekonomis Tipe A,Camilan,botol,20
+SKU-00540,Beras Premium Jumbo Tipe B,Sembako,pcs,24
+SKU-00541,Wafer Cokelat Kecil Tipe D,Camilan,botol,100
+SKU-00542,Kecap Manis Sedang Tipe D,Sembako,pack,100
+SKU-00543,Minyak Goreng Kecil Tipe B,Sembako,botol,10
+SKU-00544,Kecap Asin Besar Tipe B,Sembako,pcs,100
+SKU-00545,Air Mineral Kecil Tipe E,Minuman,botol,80
+SKU-00546,Deterjen Cair Jumbo Tipe E,Kebersihan,pack,100
+SKU-00547,Deterjen Bubuk Jumbo Tipe B,Kebersihan,pcs,24
+SKU-00548,Pewangi Pakaian Besar Tipe D,Kebersihan,kg,24
+SKU-00549,Margarin Ekonomis Tipe E,Sembako,pack,100
+SKU-00550,Kopi Sachet Sedang Tipe B,Minuman,pack,10
+SKU-00551,Air Mineral Ekonomis Tipe B,Minuman,kg,100
+SKU-00552,Bihun Besar Tipe B,Makanan Instan,pcs,100
+SKU-00553,Bihun Jumbo Tipe D,Makanan Instan,botol,24
+SKU-00554,Kornet Kaleng Ekonomis Tipe E,Makanan Instan,pcs,100
+SKU-00555,Biskuit Kelapa Sedang Tipe C,Camilan,pcs,30
+SKU-00556,Tepung Beras Kecil Tipe E,Sembako,botol,24
+SKU-00557,Kopi Sachet Sedang Tipe E,Minuman,kg,100
+SKU-00558,Beras Medium Kecil Tipe E,Sembako,pcs,80
+SKU-00559,Saus Tomat Sedang Tipe E,Sembako,pack,80
+SKU-00560,Mi Instan Kuah Besar Tipe C,Makanan Instan,pcs,30
+SKU-00561,Deterjen Cair Jumbo Tipe D,Kebersihan,kg,50
+SKU-00562,Tepung Beras Kecil Tipe D,Sembako,kg,50
+SKU-00563,Sabun Cuci Piring Ekonomis Tipe C,Kebersihan,kg,80
+SKU-00564,Minuman Isotonik Ekonomis Tipe E,Minuman,kg,100
+SKU-00565,Sarden Kaleng Ekonomis Tipe D,Makanan Instan,pack,100
+SKU-00566,Minyak Goreng Jumbo Tipe B,Sembako,pcs,10
+SKU-00567,Tepung Terigu Jumbo Tipe A,Sembako,pack,80
+SKU-00568,Gula Pasir Sedang Tipe C,Sembako,pack,10
+SKU-00569,Margarin Kecil Tipe C,Sembako,kg,100
+SKU-00570,Mi Instan Kuah Kecil Tipe A,Makanan Instan,botol,100
+SKU-00571,Susu Bubuk Sedang Tipe A,Minuman,pack,24
+SKU-00572,Garam Dapur Ekonomis Tipe D,Makanan Instan,kg,50
+SKU-00573,Mi Instan Goreng Kecil Tipe B,Makanan Instan,pcs,100
+SKU-00574,Kopi Sachet Kecil Tipe B,Minuman,pcs,100
+SKU-00575,Saus Tomat Kecil Tipe E,Sembako,pcs,30
+SKU-00576,Wafer Cokelat Kecil Tipe B,Camilan,kg,50
+SKU-00577,Saus Sambal Ekonomis Tipe B,Sembako,pcs,100
+SKU-00578,Merica Bubuk Kecil Tipe C,Makanan Instan,pcs,10
+SKU-00579,Saus Sambal Besar Tipe D,Sembako,kg,30
+SKU-00580,Beras Premium Ekonomis Tipe E,Sembako,kg,100
+SKU-00581,Kopi Sachet Ekonomis Tipe C,Minuman,pcs,30
+SKU-00582,Gula Pasir Sedang Tipe E,Sembako,kg,100
+SKU-00583,Sarden Kaleng Kecil Tipe A,Makanan Instan,botol,20
+SKU-00584,Wafer Cokelat Jumbo Tipe C,Camilan,pcs,24
+SKU-00585,Kaldu Ayam Ekonomis Tipe B,Makanan Instan,pack,20
+SKU-00586,Tisu Wajah Kecil Tipe C,Kebersihan,pack,100
+SKU-00587,Pewangi Pakaian Besar Tipe A,Kebersihan,kg,10
+SKU-00588,Bihun Sedang Tipe D,Makanan Instan,botol,100
+SKU-00589,Kornet Kaleng Jumbo Tipe B,Makanan Instan,botol,80
+SKU-00590,Kopi Sachet Besar Tipe B,Minuman,pack,10
+SKU-00591,Teh Celup Ekonomis Tipe D,Minuman,botol,10
+SKU-00592,Margarin Ekonomis Tipe A,Sembako,botol,80
+SKU-00593,Saus Tomat Ekonomis Tipe D,Sembako,pack,30
+SKU-00594,Kopi Bubuk Besar Tipe D,Minuman,pack,100
+SKU-00595,Beras Medium Besar Tipe D,Sembako,pack,10
+SKU-00596,Teh Celup Jumbo Tipe B,Minuman,pcs,24
+SKU-00597,Wafer Cokelat Jumbo Tipe B,Camilan,botol,20
+SKU-00598,Mi Instan Kuah Sedang Tipe D,Makanan Instan,pack,100
+SKU-00599,Biskuit Kelapa Jumbo Tipe A,Camilan,pcs,100
+SKU-00600,Susu Bubuk Ekonomis Tipe E,Minuman,pcs,20
+SKU-00601,Deterjen Bubuk Sedang Tipe A,Kebersihan,pack,10
+SKU-00602,Tepung Beras Kecil Tipe A,Sembako,botol,20
+SKU-00603,Saus Tomat Jumbo Tipe C,Sembako,kg,24
+SKU-00604,Beras Premium Ekonomis Tipe D,Sembako,kg,24
+SKU-00605,Kecap Manis Jumbo Tipe A,Sembako,botol,100
+SKU-00606,Sarden Kaleng Sedang Tipe A,Makanan Instan,kg,50
+SKU-00607,Gula Pasir Sedang Tipe D,Sembako,pcs,10
+SKU-00608,Beras Premium Jumbo Tipe A,Sembako,pcs,24
+SKU-00609,Sabun Mandi Besar Tipe A,Kebersihan,pack,100
+SKU-00610,Kecap Asin Besar Tipe D,Sembako,kg,10
+SKU-00611,Sabun Mandi Kecil Tipe E,Kebersihan,kg,24
+SKU-00612,Minuman Isotonik Kecil Tipe E,Minuman,botol,10
+SKU-00613,Gula Pasir Besar Tipe E,Sembako,botol,80
+SKU-00614,Kecap Asin Besar Tipe C,Sembako,kg,50
+SKU-00615,Kecap Asin Jumbo Tipe C,Sembako,pack,30
+SKU-00616,Minyak Goreng Jumbo Tipe A,Sembako,pcs,80
+SKU-00617,Saus Tomat Ekonomis Tipe C,Sembako,kg,20
+SKU-00618,Saus Sambal Ekonomis Tipe D,Sembako,pack,50
+SKU-00619,Deterjen Bubuk Besar Tipe C,Kebersihan,pcs,10
+SKU-00620,Pasta Gigi Besar Tipe A,Kebersihan,pack,80
+SKU-00621,Saus Sambal Sedang Tipe D,Sembako,botol,100
+SKU-00622,Air Mineral Sedang Tipe B,Minuman,kg,10
+SKU-00623,Pasta Gigi Jumbo Tipe E,Kebersihan,pcs,30
+SKU-00624,Sarden Kaleng Kecil Tipe C,Makanan Instan,kg,30
+SKU-00625,Mentega Besar Tipe E,Sembako,botol,100
+SKU-00626,Mi Instan Kuah Besar Tipe E,Makanan Instan,pcs,20
+SKU-00627,Gula Pasir Besar Tipe B,Sembako,kg,24
+SKU-00628,Kaldu Ayam Ekonomis Tipe C,Makanan Instan,kg,50
+SKU-00629,Mentega Kecil Tipe A,Sembako,botol,80
+SKU-00630,Kopi Sachet Ekonomis Tipe B,Minuman,kg,100
+SKU-00631,Deterjen Bubuk Sedang Tipe C,Kebersihan,kg,20
+SKU-00632,Kecap Asin Ekonomis Tipe A,Sembako,botol,20
+SKU-00633,Tepung Terigu Kecil Tipe D,Sembako,kg,10
+SKU-00634,Tepung Beras Besar Tipe A,Sembako,pack,10
+SKU-00635,Sampo Kecil Tipe A,Kebersihan,pack,100
+SKU-00636,Minuman Isotonik Kecil Tipe C,Minuman,kg,24
+SKU-00637,Biskuit Kelapa Kecil Tipe B,Camilan,botol,10
+SKU-00638,Pewangi Pakaian Kecil Tipe D,Kebersihan,pcs,50
+SKU-00639,Biskuit Kelapa Sedang Tipe D,Camilan,kg,24
+SKU-00640,Garam Dapur Ekonomis Tipe B,Makanan Instan,pack,10
+SKU-00641,Biskuit Kelapa Sedang Tipe B,Camilan,pcs,24
+SKU-00642,Minuman Isotonik Besar Tipe A,Minuman,pack,10
+SKU-00643,Saus Sambal Besar Tipe C,Sembako,botol,100
+SKU-00644,Sabun Cuci Piring Jumbo Tipe A,Kebersihan,botol,30
+SKU-00645,Tepung Terigu Besar Tipe C,Sembako,kg,50
+SKU-00646,Margarin Ekonomis Tipe B,Sembako,pcs,20
+SKU-00647,Susu Bubuk Kecil Tipe B,Minuman,pack,100
+SKU-00648,Minuman Isotonik Sedang Tipe C,Minuman,botol,10
+SKU-00649,Biskuit Kelapa Kecil Tipe A,Camilan,kg,80
+SKU-00650,Kornet Kaleng Kecil Tipe B,Makanan Instan,pcs,10
+SKU-00651,Minyak Goreng Besar Tipe A,Sembako,pack,10
+SKU-00652,Mi Instan Kuah Besar Tipe A,Makanan Instan,botol,10
+SKU-00653,Beras Medium Kecil Tipe C,Sembako,kg,80
+SKU-00654,Mentega Besar Tipe B,Sembako,botol,80
+SKU-00655,Sabun Mandi Ekonomis Tipe B,Kebersihan,pack,30
+SKU-00656,Kopi Bubuk Jumbo Tipe C,Minuman,botol,50
+SKU-00657,Mi Instan Goreng Besar Tipe D,Makanan Instan,pack,20
+SKU-00658,Teh Celup Jumbo Tipe A,Minuman,kg,24
+SKU-00659,Gula Merah Ekonomis Tipe A,Sembako,pack,20
+SKU-00660,Sabun Cuci Piring Sedang Tipe A,Kebersihan,pack,30
+SKU-00661,Kecap Manis Besar Tipe B,Sembako,pcs,80
+SKU-00662,Margarin Jumbo Tipe E,Sembako,pack,30
+SKU-00663,Gula Merah Ekonomis Tipe B,Sembako,pack,10
+SKU-00664,Saus Sambal Sedang Tipe A,Sembako,kg,24
+SKU-00665,Pasta Gigi Kecil Tipe E,Kebersihan,botol,100
+SKU-00666,Susu UHT Besar Tipe E,Minuman,kg,50
+SKU-00667,Tepung Terigu Ekonomis Tipe C,Sembako,pcs,80
+SKU-00668,Teh Celup Sedang Tipe A,Minuman,pack,50
+SKU-00669,Sampo Kecil Tipe E,Kebersihan,kg,50
+SKU-00670,Susu UHT Sedang Tipe B,Minuman,kg,50
+SKU-00671,Kaldu Ayam Sedang Tipe C,Makanan Instan,pack,80
+SKU-00672,Mentega Sedang Tipe B,Sembako,kg,20
+SKU-00673,Teh Bubuk Kecil Tipe D,Minuman,kg,20
+SKU-00674,Tisu Wajah Besar Tipe C,Kebersihan,kg,80
+SKU-00675,Kopi Sachet Kecil Tipe A,Minuman,botol,100
+SKU-00676,Kaldu Ayam Sedang Tipe A,Makanan Instan,pcs,20
+SKU-00677,Teh Bubuk Kecil Tipe A,Minuman,botol,20
+SKU-00678,Kecap Asin Jumbo Tipe E,Sembako,pack,50
+SKU-00679,Mentega Kecil Tipe D,Sembako,botol,50
+SKU-00680,Mi Instan Kuah Kecil Tipe C,Makanan Instan,pack,100
+SKU-00681,Mentega Jumbo Tipe B,Sembako,botol,100
+SKU-00682,Saus Tomat Besar Tipe C,Sembako,pcs,10
+SKU-00683,Bihun Jumbo Tipe C,Makanan Instan,pack,50
+SKU-00684,Gula Merah Sedang Tipe A,Sembako,pcs,50
+SKU-00685,Kopi Bubuk Ekonomis Tipe E,Minuman,pack,100
+SKU-00686,Susu UHT Ekonomis Tipe A,Minuman,kg,100
+SKU-00687,Deterjen Bubuk Jumbo Tipe A,Kebersihan,kg,80
+SKU-00688,Saus Sambal Kecil Tipe E,Sembako,pcs,24
+SKU-00689,Sabun Mandi Kecil Tipe D,Kebersihan,pcs,24
+SKU-00690,Mentega Jumbo Tipe A,Sembako,botol,10
+SKU-00691,Garam Dapur Kecil Tipe C,Makanan Instan,kg,30
+SKU-00692,Minyak Goreng Besar Tipe E,Sembako,kg,24
+SKU-00693,Tepung Beras Jumbo Tipe B,Sembako,kg,50
+SKU-00694,Susu UHT Kecil Tipe E,Minuman,pack,24
+SKU-00695,Margarin Ekonomis Tipe D,Sembako,pack,100
+SKU-00696,Susu UHT Jumbo Tipe C,Minuman,pack,50
+SKU-00697,Kaldu Ayam Jumbo Tipe C,Makanan Instan,pack,10
+SKU-00698,Sampo Jumbo Tipe B,Kebersihan,pack,50
+SKU-00699,Beras Premium Ekonomis Tipe A,Sembako,botol,100
+SKU-00700,Pewangi Pakaian Sedang Tipe E,Kebersihan,pack,100
+SKU-00701,Teh Bubuk Ekonomis Tipe A,Minuman,kg,20
+SKU-00702,Mentega Jumbo Tipe D,Sembako,botol,24
+SKU-00703,Kornet Kaleng Sedang Tipe B,Makanan Instan,kg,24
+SKU-00704,Sabun Cuci Piring Ekonomis Tipe D,Kebersihan,kg,100
+SKU-00705,Beras Medium Ekonomis Tipe E,Sembako,botol,50
+SKU-00706,Susu Bubuk Sedang Tipe C,Minuman,kg,50
+SKU-00707,Kornet Kaleng Besar Tipe D,Makanan Instan,kg,100
+SKU-00708,Beras Medium Ekonomis Tipe B,Sembako,botol,10
+SKU-00709,Mentega Kecil Tipe C,Sembako,pack,24
+SKU-00710,Pewangi Pakaian Besar Tipe B,Kebersihan,pack,30
+SKU-00711,Margarin Kecil Tipe A,Sembako,botol,80
+SKU-00712,Deterjen Cair Kecil Tipe D,Kebersihan,pcs,20
+SKU-00713,Pasta Gigi Ekonomis Tipe A,Kebersihan,botol,10
+SKU-00714,Minuman Isotonik Sedang Tipe B,Minuman,pack,80
+SKU-00715,Gula Pasir Ekonomis Tipe B,Sembako,kg,80
+SKU-00716,Garam Dapur Jumbo Tipe E,Makanan Instan,kg,80
+SKU-00717,Kecap Manis Besar Tipe D,Sembako,pack,10
+SKU-00718,Sabun Mandi Jumbo Tipe B,Kebersihan,botol,30
+SKU-00719,Deterjen Cair Ekonomis Tipe A,Kebersihan,pack,100
+SKU-00720,Mi Instan Goreng Jumbo Tipe E,Makanan Instan,kg,80
+SKU-00721,Sarden Kaleng Besar Tipe D,Makanan Instan,pcs,80
+SKU-00722,Deterjen Cair Sedang Tipe B,Kebersihan,botol,30
+SKU-00723,Margarin Besar Tipe B,Sembako,pcs,24
+SKU-00724,Sabun Mandi Kecil Tipe B,Kebersihan,pcs,30
+SKU-00725,Wafer Cokelat Sedang Tipe A,Camilan,pcs,30
+SKU-00726,Minyak Goreng Sedang Tipe C,Sembako,pcs,20
+SKU-00727,Minyak Goreng Ekonomis Tipe E,Sembako,pcs,24
+SKU-00728,Sarden Kaleng Sedang Tipe D,Makanan Instan,kg,10
+SKU-00729,Biskuit Kelapa Besar Tipe A,Camilan,pcs,50
+SKU-00730,Air Mineral Jumbo Tipe A,Minuman,pcs,20
+SKU-00731,Deterjen Cair Sedang Tipe D,Kebersihan,pcs,20
+SKU-00732,Sampo Kecil Tipe B,Kebersihan,kg,10
+SKU-00733,Mi Instan Goreng Sedang Tipe D,Makanan Instan,kg,24
+SKU-00734,Minuman Isotonik Sedang Tipe D,Minuman,pcs,100
+SKU-00735,Saus Tomat Besar Tipe A,Sembako,pack,20
+SKU-00736,Garam Dapur Ekonomis Tipe E,Makanan Instan,kg,24
+SKU-00737,Mi Instan Goreng Besar Tipe A,Makanan Instan,kg,10
+SKU-00738,Teh Bubuk Besar Tipe C,Minuman,kg,30
+SKU-00739,Susu Kental Manis Ekonomis Tipe C,Minuman,pack,50
+SKU-00740,Tisu Wajah Jumbo Tipe D,Kebersihan,pcs,10
+SKU-00741,Beras Medium Kecil Tipe B,Sembako,pcs,20
+SKU-00742,Mi Instan Kuah Besar Tipe B,Makanan Instan,botol,100
+SKU-00743,Kornet Kaleng Besar Tipe B,Makanan Instan,pack,10
+SKU-00744,Mi Instan Kuah Sedang Tipe A,Makanan Instan,botol,30
+SKU-00745,Gula Pasir Kecil Tipe C,Sembako,pack,10
+SKU-00746,Gula Merah Kecil Tipe A,Sembako,botol,100
+SKU-00747,Bihun Ekonomis Tipe D,Makanan Instan,pack,50
+SKU-00748,Tepung Terigu Sedang Tipe D,Sembako,botol,80
+SKU-00749,Deterjen Bubuk Kecil Tipe B,Kebersihan,botol,50
+SKU-00750,Tisu Wajah Ekonomis Tipe D,Kebersihan,pack,50
+SKU-00751,Margarin Kecil Tipe B,Sembako,pcs,50
+SKU-00752,Susu UHT Sedang Tipe C,Minuman,pcs,24
+SKU-00753,Minyak Goreng Kecil Tipe C,Sembako,botol,80
+SKU-00754,Bihun Ekonomis Tipe E,Makanan Instan,pcs,20
+SKU-00755,Deterjen Bubuk Kecil Tipe E,Kebersihan,kg,20
+SKU-00756,Susu Kental Manis Jumbo Tipe E,Minuman,kg,100
+SKU-00757,Saus Tomat Besar Tipe D,Sembako,kg,30
+SKU-00758,Air Mineral Ekonomis Tipe D,Minuman,botol,20
+SKU-00759,Sabun Mandi Ekonomis Tipe C,Kebersihan,botol,100
+SKU-00760,Minyak Goreng Besar Tipe D,Sembako,botol,10
+SKU-00761,Air Mineral Besar Tipe B,Minuman,kg,10
+SKU-00762,Kopi Sachet Kecil Tipe C,Minuman,pcs,20
+SKU-00763,Gula Merah Besar Tipe B,Sembako,pcs,50
+SKU-00764,Deterjen Cair Sedang Tipe C,Kebersihan,pack,24
+SKU-00765,Susu Kental Manis Jumbo Tipe B,Minuman,kg,10
+SKU-00766,Deterjen Cair Besar Tipe D,Kebersihan,botol,100
+SKU-00767,Wafer Cokelat Besar Tipe C,Camilan,pcs,80
+SKU-00768,Tepung Beras Sedang Tipe E,Sembako,botol,30
+SKU-00769,Wafer Cokelat Kecil Tipe C,Camilan,pack,20
+SKU-00770,Teh Bubuk Sedang Tipe E,Minuman,kg,20
+SKU-00771,Minuman Isotonik Besar Tipe E,Minuman,pcs,80
+SKU-00772,Pewangi Pakaian Jumbo Tipe E,Kebersihan,kg,30
+SKU-00773,Tepung Beras Besar Tipe D,Sembako,kg,100
+SKU-00774,Kaldu Ayam Besar Tipe C,Makanan Instan,pcs,80
+SKU-00775,Merica Bubuk Sedang Tipe B,Makanan Instan,botol,10
+SKU-00776,Susu Kental Manis Kecil Tipe D,Minuman,pcs,20
+SKU-00777,Biskuit Kelapa Besar Tipe D,Camilan,kg,20
+SKU-00778,Biskuit Kelapa Ekonomis Tipe C,Camilan,pack,80
+SKU-00779,Garam Dapur Sedang Tipe A,Makanan Instan,pcs,100
+SKU-00780,Saus Tomat Ekonomis Tipe A,Sembako,kg,10
+SKU-00781,Beras Premium Sedang Tipe A,Sembako,pack,24
+SKU-00782,Minyak Goreng Sedang Tipe D,Sembako,kg,100
+SKU-00783,Air Mineral Kecil Tipe A,Minuman,pack,80
+SKU-00784,Kornet Kaleng Kecil Tipe A,Makanan Instan,botol,30
+SKU-00785,Sabun Cuci Piring Kecil Tipe A,Kebersihan,pcs,24
+SKU-00786,Garam Dapur Sedang Tipe E,Makanan Instan,botol,20
+SKU-00787,Kecap Asin Ekonomis Tipe E,Sembako,pack,10
+SKU-00788,Sabun Cuci Piring Ekonomis Tipe B,Kebersihan,pack,10
+SKU-00789,Minuman Isotonik Jumbo Tipe C,Minuman,pcs,20
+SKU-00790,Beras Medium Ekonomis Tipe A,Sembako,kg,10
+SKU-00791,Sarden Kaleng Besar Tipe A,Makanan Instan,kg,50
+SKU-00792,Tepung Terigu Ekonomis Tipe D,Sembako,pcs,100
+SKU-00793,Kecap Asin Kecil Tipe D,Sembako,pcs,24
+SKU-00794,Margarin Kecil Tipe D,Sembako,pack,100
+SKU-00795,Wafer Cokelat Ekonomis Tipe E,Camilan,botol,10
+SKU-00796,Gula Merah Besar Tipe A,Sembako,kg,20
+SKU-00797,Susu Bubuk Sedang Tipe E,Minuman,pack,24
+SKU-00798,Biskuit Kelapa Jumbo Tipe E,Camilan,kg,10
+SKU-00799,Teh Celup Besar Tipe C,Minuman,pack,80
+SKU-00800,Beras Premium Kecil Tipe A,Sembako,kg,80
+SKU-00801,Gula Merah Jumbo Tipe E,Sembako,pcs,24
+SKU-00802,Beras Premium Besar Tipe E,Sembako,botol,10
+SKU-00803,Air Mineral Besar Tipe D,Minuman,kg,10
+SKU-00804,Tepung Beras Ekonomis Tipe E,Sembako,kg,50
+SKU-00805,Kopi Bubuk Ekonomis Tipe B,Minuman,pack,80
+SKU-00806,Sabun Mandi Jumbo Tipe A,Kebersihan,pcs,80
+SKU-00807,Mentega Ekonomis Tipe E,Sembako,pack,100
+SKU-00808,Gula Merah Ekonomis Tipe D,Sembako,kg,20
+SKU-00809,Bihun Kecil Tipe E,Makanan Instan,pcs,50
+SKU-00810,Minuman Isotonik Besar Tipe D,Minuman,kg,50
+SKU-00811,Kecap Asin Ekonomis Tipe C,Sembako,pcs,100
+SKU-00812,Kornet Kaleng Besar Tipe E,Makanan Instan,botol,10
+SKU-00813,Gula Pasir Jumbo Tipe A,Sembako,botol,100
+SKU-00814,Pewangi Pakaian Sedang Tipe D,Kebersihan,kg,10
+SKU-00815,Kaldu Ayam Ekonomis Tipe A,Makanan Instan,pack,80
+SKU-00816,Pasta Gigi Besar Tipe D,Kebersihan,botol,80
+SKU-00817,Mentega Besar Tipe C,Sembako,botol,50
+SKU-00818,Teh Celup Besar Tipe D,Minuman,botol,50
+SKU-00819,Kecap Asin Jumbo Tipe A,Sembako,kg,20
+SKU-00820,Susu UHT Kecil Tipe C,Minuman,kg,30
+SKU-00821,Deterjen Bubuk Kecil Tipe D,Kebersihan,kg,20
+SKU-00822,Tisu Wajah Sedang Tipe B,Kebersihan,pack,80
+SKU-00823,Merica Bubuk Sedang Tipe A,Makanan Instan,pack,100
+SKU-00824,Kopi Sachet Ekonomis Tipe D,Minuman,botol,30
+SKU-00825,Air Mineral Besar Tipe E,Minuman,pack,100
+SKU-00826,Tisu Wajah Besar Tipe B,Kebersihan,pcs,50
+SKU-00827,Saus Tomat Ekonomis Tipe E,Sembako,kg,10
+SKU-00828,Saus Sambal Ekonomis Tipe C,Sembako,kg,10
+SKU-00829,Beras Medium Sedang Tipe E,Sembako,pack,50
+SKU-00830,Garam Dapur Kecil Tipe E,Makanan Instan,kg,80
+SKU-00831,Susu Bubuk Ekonomis Tipe B,Minuman,botol,50
+SKU-00832,Kopi Sachet Jumbo Tipe E,Minuman,kg,30
+SKU-00833,Deterjen Cair Kecil Tipe C,Kebersihan,kg,30
+SKU-00834,Susu Kental Manis Sedang Tipe E,Minuman,kg,10
+SKU-00835,Sabun Cuci Piring Besar Tipe A,Kebersihan,pack,20
+SKU-00836,Susu Kental Manis Ekonomis Tipe D,Minuman,pack,80
+SKU-00837,Teh Bubuk Kecil Tipe C,Minuman,pack,10
+SKU-00838,Teh Bubuk Ekonomis Tipe C,Minuman,botol,50
+SKU-00839,Merica Bubuk Sedang Tipe E,Makanan Instan,pack,50
+SKU-00840,Kecap Asin Jumbo Tipe B,Sembako,pack,80
+SKU-00841,Margarin Kecil Tipe E,Sembako,botol,10
+SKU-00842,Mi Instan Kuah Jumbo Tipe D,Makanan Instan,botol,80
+SKU-00843,Susu Kental Manis Kecil Tipe B,Minuman,botol,100
+SKU-00844,Pasta Gigi Sedang Tipe E,Kebersihan,pcs,100
+SKU-00845,Deterjen Bubuk Ekonomis Tipe C,Kebersihan,kg,80
+SKU-00846,Teh Celup Jumbo Tipe E,Minuman,pack,100
+SKU-00847,Wafer Cokelat Besar Tipe B,Camilan,pack,20
+SKU-00848,Kornet Kaleng Ekonomis Tipe B,Makanan Instan,kg,30
+SKU-00849,Minyak Goreng Kecil Tipe D,Sembako,botol,20
+SKU-00850,Beras Medium Sedang Tipe D,Sembako,kg,80
+SKU-00851,Beras Premium Sedang Tipe E,Sembako,pcs,10
+SKU-00852,Saus Sambal Kecil Tipe A,Sembako,botol,80
+SKU-00853,Pewangi Pakaian Kecil Tipe B,Kebersihan,kg,100
+SKU-00854,Saus Tomat Kecil Tipe B,Sembako,pcs,20
+SKU-00855,Margarin Sedang Tipe C,Sembako,pcs,100
+SKU-00856,Kopi Sachet Jumbo Tipe D,Minuman,pack,20
+SKU-00857,Pewangi Pakaian Jumbo Tipe B,Kebersihan,botol,10
+SKU-00858,Pasta Gigi Sedang Tipe C,Kebersihan,botol,80
+SKU-00859,Sampo Ekonomis Tipe E,Kebersihan,botol,20
+SKU-00860,Merica Bubuk Jumbo Tipe A,Makanan Instan,pack,20
+SKU-00861,Susu Kental Manis Besar Tipe D,Minuman,pack,24
+SKU-00862,Minuman Isotonik Jumbo Tipe E,Minuman,botol,20
+SKU-00863,Deterjen Bubuk Jumbo Tipe D,Kebersihan,kg,30
+SKU-00864,Susu Bubuk Besar Tipe B,Minuman,botol,100
+SKU-00865,Saus Tomat Jumbo Tipe A,Sembako,pcs,10
+SKU-00866,Garam Dapur Besar Tipe A,Makanan Instan,pack,50
+SKU-00867,Kopi Bubuk Besar Tipe B,Minuman,pcs,20
+SKU-00868,Susu Bubuk Ekonomis Tipe D,Minuman,pcs,100
+SKU-00869,Air Mineral Kecil Tipe D,Minuman,botol,10
+SKU-00870,Susu Bubuk Sedang Tipe D,Minuman,kg,80
+SKU-00871,Kaldu Ayam Sedang Tipe B,Makanan Instan,pcs,30
+SKU-00872,Teh Bubuk Sedang Tipe A,Minuman,pack,100
+SKU-00873,Garam Dapur Jumbo Tipe A,Makanan Instan,pack,50
+SKU-00874,Teh Celup Jumbo Tipe C,Minuman,pack,50
+SKU-00875,Merica Bubuk Jumbo Tipe C,Makanan Instan,kg,24
+SKU-00876,Sarden Kaleng Jumbo Tipe B,Makanan Instan,pack,50
+SKU-00877,Tepung Terigu Ekonomis Tipe E,Sembako,pack,30
+SKU-00878,Pewangi Pakaian Ekonomis Tipe A,Kebersihan,kg,50
+SKU-00879,Kecap Manis Sedang Tipe E,Sembako,pcs,30
+SKU-00880,Teh Bubuk Jumbo Tipe D,Minuman,pack,20
+SKU-00881,Tepung Beras Ekonomis Tipe A,Sembako,botol,100
+SKU-00882,Teh Bubuk Sedang Tipe B,Minuman,pack,50
+SKU-00883,Kopi Sachet Besar Tipe E,Minuman,pack,24
+SKU-00884,Sarden Kaleng Besar Tipe C,Makanan Instan,pack,20
+SKU-00885,Kaldu Ayam Sedang Tipe E,Makanan Instan,pcs,80
+SKU-00886,Minuman Isotonik Jumbo Tipe B,Minuman,botol,30
+SKU-00887,Garam Dapur Besar Tipe B,Makanan Instan,pack,80
+SKU-00888,Susu UHT Besar Tipe A,Minuman,pcs,20
+SKU-00889,Merica Bubuk Ekonomis Tipe B,Makanan Instan,pcs,80
+SKU-00890,Gula Pasir Kecil Tipe A,Sembako,pack,30
+SKU-00891,Deterjen Cair Besar Tipe C,Kebersihan,pcs,24
+SKU-00892,Tepung Beras Sedang Tipe C,Sembako,pack,80
+SKU-00893,Sabun Cuci Piring Sedang Tipe E,Kebersihan,botol,20
+SKU-00894,Kecap Manis Kecil Tipe E,Sembako,pcs,20
+SKU-00895,Biskuit Kelapa Besar Tipe E,Camilan,kg,24
+SKU-00896,Tisu Wajah Kecil Tipe D,Kebersihan,pcs,24
+SKU-00897,Tisu Wajah Ekonomis Tipe E,Kebersihan,botol,20
+SKU-00898,Susu UHT Sedang Tipe A,Minuman,pcs,10
+SKU-00899,Tisu Wajah Ekonomis Tipe B,Kebersihan,botol,30
+SKU-00900,Teh Bubuk Jumbo Tipe A,Minuman,botol,24
+SKU-00901,Biskuit Kelapa Kecil Tipe C,Camilan,botol,10
+SKU-00902,Minuman Isotonik Sedang Tipe E,Minuman,kg,80
+SKU-00903,Pewangi Pakaian Besar Tipe E,Kebersihan,pack,10
+SKU-00904,Kecap Asin Besar Tipe E,Sembako,pack,10
+SKU-00905,Susu UHT Besar Tipe C,Minuman,botol,20
+SKU-00906,Kopi Bubuk Sedang Tipe C,Minuman,pack,50
+SKU-00907,Air Mineral Sedang Tipe D,Minuman,botol,20
+SKU-00908,Sampo Ekonomis Tipe B,Kebersihan,pack,80
+SKU-00909,Wafer Cokelat Besar Tipe E,Camilan,pack,24
+SKU-00910,Sampo Besar Tipe C,Kebersihan,botol,20
+SKU-00911,Sabun Mandi Jumbo Tipe D,Kebersihan,botol,50
+SKU-00912,Deterjen Bubuk Ekonomis Tipe B,Kebersihan,pack,80
+SKU-00913,Susu Kental Manis Jumbo Tipe D,Minuman,pcs,80
+SKU-00914,Kopi Sachet Besar Tipe A,Minuman,pack,10
+SKU-00915,Tepung Terigu Jumbo Tipe E,Sembako,pack,30
+SKU-00916,Sampo Besar Tipe D,Kebersihan,botol,50
+SKU-00917,Susu Kental Manis Besar Tipe A,Minuman,botol,30
+SKU-00918,Susu Bubuk Jumbo Tipe C,Minuman,pack,20
+SKU-00919,Biskuit Kelapa Ekonomis Tipe E,Camilan,pack,80
+SKU-00920,Air Mineral Besar Tipe A,Minuman,pcs,10
+SKU-00921,Kopi Bubuk Sedang Tipe D,Minuman,botol,10
+SKU-00922,Gula Merah Jumbo Tipe C,Sembako,kg,80
+SKU-00923,Kopi Sachet Sedang Tipe C,Minuman,kg,20
+SKU-00924,Teh Celup Ekonomis Tipe C,Minuman,pack,50
+SKU-00925,Mi Instan Kuah Ekonomis Tipe C,Makanan Instan,pack,30
+SKU-00926,Bihun Kecil Tipe C,Makanan Instan,pack,80
+SKU-00927,Kaldu Ayam Kecil Tipe C,Makanan Instan,pcs,30
+SKU-00928,Pewangi Pakaian Jumbo Tipe D,Kebersihan,pack,80
+SKU-00929,Beras Medium Kecil Tipe A,Sembako,botol,100
+SKU-00930,Saus Tomat Jumbo Tipe B,Sembako,pack,100
+SKU-00931,Biskuit Kelapa Jumbo Tipe B,Camilan,kg,30
+SKU-00932,Kaldu Ayam Sedang Tipe D,Makanan Instan,pcs,100
+SKU-00933,Merica Bubuk Ekonomis Tipe A,Makanan Instan,pcs,24
+SKU-00934,Kornet Kaleng Besar Tipe A,Makanan Instan,pack,100
+SKU-00935,Sampo Ekonomis Tipe C,Kebersihan,kg,10
+SKU-00936,Tepung Beras Jumbo Tipe E,Sembako,pcs,80
+SKU-00937,Teh Celup Jumbo Tipe D,Minuman,pcs,20
+SKU-00938,Air Mineral Jumbo Tipe B,Minuman,pack,10
+SKU-00939,Saus Sambal Ekonomis Tipe E,Sembako,botol,20
+SKU-00940,Susu Bubuk Kecil Tipe A,Minuman,botol,50
+SKU-00941,Susu Bubuk Ekonomis Tipe A,Minuman,pcs,100
+SKU-00942,Gula Merah Jumbo Tipe B,Sembako,pack,24
+SKU-00943,Mi Instan Goreng Ekonomis Tipe D,Makanan Instan,botol,20
+SKU-00944,Kaldu Ayam Jumbo Tipe A,Makanan Instan,botol,20
+SKU-00945,Gula Merah Kecil Tipe D,Sembako,pack,80
+SKU-00946,Kornet Kaleng Kecil Tipe D,Makanan Instan,kg,80
+SKU-00947,Susu UHT Kecil Tipe A,Minuman,pack,20
+SKU-00948,Sabun Mandi Besar Tipe D,Kebersihan,kg,20
+SKU-00949,Bihun Besar Tipe A,Makanan Instan,pcs,50
+SKU-00950,Deterjen Bubuk Ekonomis Tipe E,Kebersihan,botol,24
+SKU-00951,Mi Instan Kuah Jumbo Tipe A,Makanan Instan,botol,100
+SKU-00952,Air Mineral Kecil Tipe B,Minuman,kg,20
+SKU-00953,Mi Instan Kuah Sedang Tipe B,Makanan Instan,pcs,24
+SKU-00954,Kecap Asin Sedang Tipe C,Sembako,pcs,30
+SKU-00955,Kopi Bubuk Sedang Tipe B,Minuman,pcs,50
+SKU-00956,Margarin Jumbo Tipe A,Sembako,pack,50
+SKU-00957,Saus Tomat Ekonomis Tipe B,Sembako,kg,20
+SKU-00958,Garam Dapur Ekonomis Tipe A,Makanan Instan,botol,30
+SKU-00959,Minuman Isotonik Kecil Tipe B,Minuman,kg,100
+SKU-00960,Merica Bubuk Kecil Tipe B,Makanan Instan,pack,50
+SKU-00961,Pasta Gigi Besar Tipe C,Kebersihan,pack,50
+SKU-00962,Deterjen Cair Sedang Tipe E,Kebersihan,pack,20
+SKU-00963,Beras Premium Besar Tipe B,Sembako,pcs,20
+SKU-00964,Teh Celup Besar Tipe A,Minuman,pcs,50
+SKU-00965,Tepung Terigu Kecil Tipe A,Sembako,kg,24
+SKU-00966,Deterjen Cair Besar Tipe B,Kebersihan,pack,50
+SKU-00967,Saus Sambal Jumbo Tipe E,Sembako,botol,80
+SKU-00968,Tepung Terigu Besar Tipe D,Sembako,pack,20
+SKU-00969,Gula Merah Sedang Tipe C,Sembako,pack,20
+SKU-00970,Sarden Kaleng Kecil Tipe D,Makanan Instan,pack,50
+SKU-00971,Beras Premium Kecil Tipe C,Sembako,pack,50
+SKU-00972,Kecap Manis Ekonomis Tipe A,Sembako,kg,100
+SKU-00973,Teh Celup Kecil Tipe B,Minuman,botol,30
+SKU-00974,Wafer Cokelat Kecil Tipe A,Camilan,kg,10
+SKU-00975,Sabun Cuci Piring Jumbo Tipe B,Kebersihan,kg,100
+SKU-00976,Sabun Mandi Jumbo Tipe E,Kebersihan,pack,20
+SKU-00977,Susu Kental Manis Kecil Tipe C,Minuman,botol,20
+SKU-00978,Sabun Cuci Piring Besar Tipe B,Kebersihan,pack,30
+SKU-00979,Sabun Cuci Piring Ekonomis Tipe A,Kebersihan,pcs,80
+SKU-00980,Kaldu Ayam Ekonomis Tipe D,Makanan Instan,pack,10
+SKU-00981,Pewangi Pakaian Besar Tipe C,Kebersihan,kg,10
+SKU-00982,Susu Bubuk Besar Tipe A,Minuman,kg,30
+SKU-00983,Biskuit Kelapa Besar Tipe B,Camilan,botol,24
+SKU-00984,Deterjen Bubuk Kecil Tipe C,Kebersihan,botol,80
+SKU-00985,Kopi Sachet Sedang Tipe A,Minuman,kg,10
+SKU-00986,Susu Bubuk Jumbo Tipe E,Minuman,kg,80
+SKU-00987,Sarden Kaleng Besar Tipe B,Makanan Instan,botol,50
+SKU-00988,Wafer Cokelat Jumbo Tipe A,Camilan,kg,100
+SKU-00989,Pasta Gigi Jumbo Tipe B,Kebersihan,botol,80
+SKU-00990,Kecap Manis Kecil Tipe D,Sembako,pack,80
+SKU-00991,Pasta Gigi Sedang Tipe A,Kebersihan,kg,10
+SKU-00992,Tepung Terigu Sedang Tipe A,Sembako,botol,20
+SKU-00993,Minuman Isotonik Kecil Tipe A,Minuman,pcs,100
+SKU-00994,Sampo Sedang Tipe A,Kebersihan,pack,10
+SKU-00995,Kornet Kaleng Besar Tipe C,Makanan Instan,pcs,24
+SKU-00996,Susu Kental Manis Ekonomis Tipe E,Minuman,pcs,50
+SKU-00997,Air Mineral Ekonomis Tipe E,Minuman,kg,10
+SKU-00998,Susu Kental Manis Besar Tipe E,Minuman,pcs,80
+SKU-00999,Mi Instan Goreng Kecil Tipe C,Makanan Instan,pack,100
+SKU-01000,Tepung Terigu Ekonomis Tipe B,Sembako,pcs,30

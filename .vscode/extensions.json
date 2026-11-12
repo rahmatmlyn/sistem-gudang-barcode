@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "anthropic.claude-code",
+    "bmewburn.vscode-intelephense-client",
+    "laravel.vscode-laravel",
+    "onecentlab.laravel-blade",
+    "bradlc.vscode-tailwindcss",
+    "bierner.markdown-mermaid",
+    "mechatroner.rainbow-csv",
+    "ms-python.python",
+    "editorconfig.editorconfig"
+  ]
+}

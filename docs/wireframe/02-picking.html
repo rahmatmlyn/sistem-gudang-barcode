@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Picking Barang Keluar</title>
+
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1B5FD0}a:hover{color:#144AA2}
+</style>
+
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F5F7; font-family: Inter, system-ui, sans-serif; color: #161A21; display: flex; flex-direction: column; overflow: hidden">
+  <header style="background: #FFFFFF; border-bottom: 1px solid #D9DDE3; padding: 12px 16px; display: flex; flex-direction: column; gap: 10px">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <button aria-label="Kembali" style="width: 44px; height: 44px; border: 1px solid #D9DDE3; border-radius: 10px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#161A21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+      </button>
+      <div style="display: flex; flex-direction: column; gap: 2px; flex-grow: 1">
+        <div style="font-size: 17px; font-weight: 600">Picking</div>
+        <div style="font-size: 13px; color: #5A6270">SO-2026-0087 · [Nama pelanggan]</div>
+      </div>
+      <div style="font-size: 14px; font-weight: 600">3 / 5</div>
+    </div>
+    <div style="height: 8px; background: #E4E7EC; border-radius: 999px; overflow: hidden">
+      <div style="width: 60%; height: 8px; background: #1B5FD0"></div>
+    </div>
+  </header>
+
+  <div style="padding: 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="background: #FFFFFF; border: 2px solid #1B5FD0; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 12px; font-weight: 600; color: #5A6270; letter-spacing: 0.04em">AMBIL DARI LOKASI</div>
+      <div style="font-size: 40px; font-weight: 700; letter-spacing: 0.02em">A-02-03</div>
+      <div style="height: 1px; background: #E4E7EC"></div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px">
+        <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+          <div style="font-size: 16px; font-weight: 600">Minyak Goreng 2 L</div>
+          <div style="font-size: 13px; color: #5A6270">SKU MYG-002</div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 2px">
+          <div style="font-size: 12px; color: #5A6270">Ambil</div>
+          <div style="font-size: 22px; font-weight: 700">6 pcs</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 8px">
+        <div style="flex-grow: 1; display: flex; align-items: center; gap: 8px; background: #E7F4EC; border-radius: 10px; padding: 10px 12px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14633A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg>
+          <span style="font-size: 13px; font-weight: 600; color: #14633A">1. Lokasi discan</span>
+        </div>
+        <div style="flex-grow: 1; display: flex; align-items: center; gap: 8px; background: #F4F5F7; border: 1px dashed #A9B0BB; border-radius: 10px; padding: 10px 12px">
+          <span style="font-size: 13px; font-weight: 600; color: #3B424D">2. Scan barang (2/6)</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="scan-pick" style="font-size: 13px; font-weight: 600; color: #3B424D">Scan barcode barang</label>
+      <div style="display: flex; align-items: center; gap: 10px; background: #FFFFFF; border: 1px solid #C4CAD3; border-radius: 12px; padding: 0 14px; height: 56px">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3B424D" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 5v14M7 5v14M11 5v14M14 5v14M18 5v14M21 5v14"></path></svg>
+        <input id="scan-pick" type="text" placeholder="Arahkan scanner ke barcode" style="border: none; outline: none; font-size: 16px; font-family: inherit; flex-grow: 1; background: transparent; color: #161A21">
+      </div>
+    </div>
+
+    <div style="background: #FDF1E3; border: 1px solid #F0C28E; border-radius: 12px; padding: 12px 14px; display: flex; gap: 12px; align-items: flex-start">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A4A06" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9L2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path></svg>
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <div style="font-size: 14px; font-weight: 600; color: #8A4A06">Barang tidak sesuai</div>
+        <div style="font-size: 13px; color: #6B3A05">Yang discan: Minyak Goreng 1 L. Ambil Minyak Goreng 2 L.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 16px; font-size: 15px; font-weight: 600">Berikutnya</div>
+  <div style="padding: 8px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1; overflow: hidden">
+    <div style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 10px 12px; display: flex; align-items: center; gap: 12px">
+      <div style="font-size: 14px; font-weight: 700; width: 64px">A-03-01</div>
+      <div style="flex-grow: 1; font-size: 14px">Gula Pasir 1 kg</div>
+      <div style="font-size: 14px; font-weight: 600">10 pcs</div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 10px 12px; display: flex; align-items: center; gap: 12px">
+      <div style="font-size: 14px; font-weight: 700; width: 64px">B-01-02</div>
+      <div style="flex-grow: 1; font-size: 14px">Beras Premium 5 kg</div>
+      <div style="font-size: 14px; font-weight: 600">4 pcs</div>
+    </div>
+  </div>
+
+  <footer style="background: #FFFFFF; border-top: 1px solid #D9DDE3; padding: 12px 16px 20px; display: flex; gap: 10px">
+    <button style="flex-grow: 1; height: 52px; border: 1px solid #C4CAD3; border-radius: 12px; background: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; color: #161A21">Laporkan kosong</button>
+    <button style="flex-grow: 2; height: 52px; border: none; border-radius: 12px; background: #9BB6E6; font-family: inherit; font-size: 15px; font-weight: 600; color: #161A21" disabled="disabled">Konfirmasi (2/6)</button>
+  </footer>
+</div>
+
+
+</body>
+</html>

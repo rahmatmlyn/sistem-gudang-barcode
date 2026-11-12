@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Dashboard Web Admin Gudang</title>
+
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1B5FD0}a:hover{color:#144AA2}
+</style>
+
+<div style="min-height: 900px; box-sizing: border-box; background: #F4F5F7; font-family: Inter, system-ui, sans-serif; color: #161A21; display: flex; flex-wrap: wrap; align-items: stretch">
+  <nav aria-label="Menu utama" style="flex: 1 1 220px; max-width: 100%; background: #161A21; color: #E6E9EE; padding: 20px 14px; display: flex; flex-direction: column; gap: 4px; box-sizing: border-box">
+    <div style="font-size: 16px; font-weight: 700; padding: 6px 10px 18px; color: #FFFFFF">[Nama Gudang]</div>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; background: #2A303B; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">Dashboard</a>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; color: #C9CED6; font-size: 14px; text-decoration: none">Master Barang</a>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; color: #C9CED6; font-size: 14px; text-decoration: none">Lokasi dan Label</a>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; color: #C9CED6; font-size: 14px; text-decoration: none">Penerimaan</a>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; color: #C9CED6; font-size: 14px; text-decoration: none">Barang Keluar</a>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; color: #C9CED6; font-size: 14px; text-decoration: none">Transfer</a>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; color: #C9CED6; font-size: 14px; text-decoration: none">Stock Opname</a>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; color: #C9CED6; font-size: 14px; text-decoration: none">Kartu Stok dan Laporan</a>
+    <a href="#" style="display: block; padding: 11px 12px; border-radius: 8px; color: #C9CED6; font-size: 14px; text-decoration: none">Pengguna</a>
+  </nav>
+
+  <main style="flex: 999 1 560px; min-width: 0; padding: 24px 28px 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+    <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <h1 style="margin: 0; font-size: 24px; font-weight: 700">Dashboard</h1>
+        <div style="font-size: 14px; color: #5A6270">Gudang Utama · data real-time dari scan</div>
+      </div>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap">
+        <label for="cari" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Cari barang</label>
+        <input id="cari" type="search" placeholder="Cari SKU, nama, atau barcode" style="height: 44px; width: 280px; max-width: 100%; box-sizing: border-box; padding: 0 14px; border: 1px solid #C4CAD3; border-radius: 10px; font-family: inherit; font-size: 14px; background: #FFFFFF; color: #161A21">
+        <button style="height: 44px; padding: 0 16px; border: none; border-radius: 10px; background: #1B5FD0; color: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 600">Cetak Label</button>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px">
+      <div style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+        <div style="font-size: 13px; color: #5A6270">SKU aktif</div>
+        <div style="font-size: 28px; font-weight: 700">1.248</div>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+        <div style="font-size: 13px; color: #5A6270">Di bawah stok minimum</div>
+        <div style="font-size: 28px; font-weight: 700; color: #8A4A06">17</div>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+        <div style="font-size: 13px; color: #5A6270">Dokumen berjalan</div>
+        <div style="font-size: 28px; font-weight: 700">9</div>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+        <div style="font-size: 13px; color: #5A6270">Selisih opname menunggu approval</div>
+        <div style="font-size: 28px; font-weight: 700">3</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px">
+      <section style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; justify-content: space-between; align-items: baseline">
+          <h2 style="margin: 0; font-size: 16px; font-weight: 600">Selisih opname menunggu approval</h2>
+          <a href="#" style="font-size: 13px">Lihat semua</a>
+        </div>
+        <div style="overflow-x: auto">
+          <table style="width: 100%; border-collapse: collapse; font-size: 14px">
+            <thead>
+              <tr style="text-align: left; color: #5A6270; font-size: 12px">
+                <th style="padding: 8px 6px; border-bottom: 1px solid #E4E7EC; font-weight: 600">Barang · Lokasi</th>
+                <th style="padding: 8px 6px; border-bottom: 1px solid #E4E7EC; font-weight: 600; text-align: right">Sistem</th>
+                <th style="padding: 8px 6px; border-bottom: 1px solid #E4E7EC; font-weight: 600; text-align: right">Fisik</th>
+                <th style="padding: 8px 6px; border-bottom: 1px solid #E4E7EC; font-weight: 600; text-align: right">Selisih</th>
+                <th style="padding: 8px 6px; border-bottom: 1px solid #E4E7EC"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5">Beras Premium 5 kg<br><span style="font-size: 12px; color: #5A6270">A-01-02</span></td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right">20</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right">18</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right; font-weight: 600; color: #8A4A06">−2</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right"><button style="height: 36px; padding: 0 12px; border: 1px solid #C4CAD3; border-radius: 8px; background: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 600; color: #161A21">Tinjau</button></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5">Gula Pasir 1 kg<br><span style="font-size: 12px; color: #5A6270">A-01-02</span></td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right">40</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right">42</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right; font-weight: 600; color: #1B5FD0">+2</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right"><button style="height: 36px; padding: 0 12px; border: 1px solid #C4CAD3; border-radius: 8px; background: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 600; color: #161A21">Tinjau</button></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 6px">Kecap Manis 520 ml<br><span style="font-size: 12px; color: #5A6270">A-02-01</span></td>
+                <td style="padding: 10px 6px; text-align: right">15</td>
+                <td style="padding: 10px 6px; text-align: right">12</td>
+                <td style="padding: 10px 6px; text-align: right; font-weight: 600; color: #8A4A06">−3</td>
+                <td style="padding: 10px 6px; text-align: right"><button style="height: 36px; padding: 0 12px; border: 1px solid #C4CAD3; border-radius: 8px; background: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 600; color: #161A21">Tinjau</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; justify-content: space-between; align-items: baseline">
+          <h2 style="margin: 0; font-size: 16px; font-weight: 600">Stok di bawah minimum</h2>
+          <a href="#" style="font-size: 13px">Lihat semua</a>
+        </div>
+        <div style="overflow-x: auto">
+          <table style="width: 100%; border-collapse: collapse; font-size: 14px">
+            <thead>
+              <tr style="text-align: left; color: #5A6270; font-size: 12px">
+                <th style="padding: 8px 6px; border-bottom: 1px solid #E4E7EC; font-weight: 600">Barang</th>
+                <th style="padding: 8px 6px; border-bottom: 1px solid #E4E7EC; font-weight: 600; text-align: right">Stok</th>
+                <th style="padding: 8px 6px; border-bottom: 1px solid #E4E7EC; font-weight: 600; text-align: right">Minimum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5">Minyak Goreng 2 L</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right; font-weight: 600; color: #8A4A06">8</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right">24</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5">Tepung Terigu 1 kg</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right; font-weight: 600; color: #8A4A06">9</td>
+                <td style="padding: 10px 6px; border-bottom: 1px solid #F0F2F5; text-align: right">30</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 6px">Mi Instan Goreng 85 g</td>
+                <td style="padding: 10px 6px; text-align: right; font-weight: 600; color: #8A4A06">35</td>
+                <td style="padding: 10px 6px; text-align: right">80</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <section style="background: #FFFFFF; border: 1px solid #D9DDE3; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+      <h2 style="margin: 0; font-size: 16px; font-weight: 600">Aktivitas scan terbaru</h2>
+      <div style="display: flex; flex-direction: column">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; padding: 10px 0; border-bottom: 1px solid #F0F2F5; font-size: 14px">
+          <span style="width: 56px; color: #5A6270">10.42</span>
+          <span style="width: 120px; font-weight: 600">[Staf A]</span>
+          <span style="flex: 1 1 240px">Putaway Mi Instan Goreng 85 g ke A-02-04 · GRN-2026-0012</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; padding: 10px 0; border-bottom: 1px solid #F0F2F5; font-size: 14px">
+          <span style="width: 56px; color: #5A6270">10.37</span>
+          <span style="width: 120px; font-weight: 600">[Staf B]</span>
+          <span style="flex: 1 1 240px">Picking Minyak Goreng 2 L dari A-02-03 · SO-2026-0087</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; padding: 10px 0; font-size: 14px">
+          <span style="width: 56px; color: #5A6270">10.31</span>
+          <span style="width: 120px; font-weight: 600">[Staf C]</span>
+          <span style="flex: 1 1 240px">Opname lokasi A-01-02 disimpan · OPN-2026-0004</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+
+</body>
+</html>

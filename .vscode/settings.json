@@ -1,0 +1,8 @@
+{
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "editor.tabSize": 4,
+  "[markdown]": { "editor.wordWrap": "on" },
+  "files.exclude": { "**/node_modules": true, "**/vendor": true },
+  "search.exclude": { "database/dummy/stock_movements.csv": true }
+}

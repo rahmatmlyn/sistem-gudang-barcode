@@ -1,0 +1,9 @@
+# Akan digabung dengan .gitignore bawaan Laravel saat proyek dipasang
+/vendor
+/node_modules
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.pyc
