@@ -25,4 +25,10 @@ class ItemBarcode extends Model
     {
         return $this->belongsTo(Item::class);
     }
+
+    /** Aturan 4: qty kemasan → qty satuan dasar. */
+    public function toBaseQty(int $qty): int
+    {
+        return $qty * $this->factor;
+    }
 }
