@@ -16,4 +16,10 @@ class Warehouse extends Model
     {
         return $this->hasMany(Location::class);
     }
+
+    public function isReferenced(): bool
+    {
+        return $this->locations()->exists()
+            || Document::query()->where('warehouse_id', $this->id)->exists();
+    }
 }

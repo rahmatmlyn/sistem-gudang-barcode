@@ -41,4 +41,12 @@ class User extends Authenticatable implements FilamentUser
     {
         return in_array($this->role, $roles, true);
     }
+
+    /** Sudah tercatat di dokumen atau ledger: tidak boleh dihapus agar jejak audit utuh. */
+    public function isReferenced(): bool
+    {
+        return Document::query()->where('created_by', $this->id)->exists()
+            || StockMovement::query()->where('user_id', $this->id)->exists()
+            || ScanLog::query()->where('user_id', $this->id)->exists();
+    }
 }

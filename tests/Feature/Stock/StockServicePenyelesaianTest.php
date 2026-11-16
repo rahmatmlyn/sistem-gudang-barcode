@@ -160,7 +160,7 @@ it('mencatat activity log dengan user, aksi, dan dokumen', function () {
 
     $this->stok->receive($grn, $this->g->staf);
 
-    $log = ActivityLog::sole();
+    $log = ActivityLog::where('subject_type', $grn->getMorphClass())->sole();
     expect($log->user_id)->toBe($this->g->staf->id);
     expect($log->action)->toBe('dokumen.selesai');
     expect($log->subject->is($grn))->toBeTrue();

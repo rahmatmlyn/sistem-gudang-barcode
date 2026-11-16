@@ -34,4 +34,12 @@ class Item extends Model
     {
         return $this->hasMany(StockMovement::class);
     }
+
+    /** Sudah dipakai dokumen, ledger, atau saldo: tidak boleh dihapus (nonaktifkan saja). */
+    public function isReferenced(): bool
+    {
+        return $this->movements()->exists()
+            || $this->balances()->exists()
+            || DocumentLine::query()->where('item_id', $this->id)->exists();
+    }
 }

@@ -18,6 +18,15 @@ function dalamSavepoint(Closure $fn): Closure
     return fn () => DB::transaction($fn);
 }
 
+/** Buat pengguna dengan peran tertentu dan login sebagai dia. */
+function sebagai(App\Enums\UserRole $role): App\Models\User
+{
+    $user = App\Models\User::factory()->create(['role' => $role]);
+    test()->actingAs($user);
+
+    return $user;
+}
+
 pest()->extend(TestCase::class)
     ->use(DatabaseTruncation::class)
     ->in('Concurrency');
