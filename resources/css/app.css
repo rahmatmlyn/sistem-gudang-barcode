@@ -8,4 +8,15 @@
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
     --color-aksen: #1b5fd0;
+    --color-aksen-tua: #144aa2;
+    --color-latar: #f4f5f7;
+    --color-teks: #161a21;
+    --color-garis: #d9dde3;
+    --color-redup: #5a6270;
+    --color-sukses: #14633a;
+    --color-sukses-muda: #e7f4ec;
+    --color-sukses-garis: #9ccfb0;
+    --color-gagal: #9a4a00;
+    --color-gagal-muda: #fff1e6;
+    --color-gagal-garis: #f5b57a;
 }

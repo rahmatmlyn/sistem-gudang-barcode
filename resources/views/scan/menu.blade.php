@@ -1,20 +1,26 @@
-{{-- Placeholder M1; diganti layar menu scan penuh di M7. --}}
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scan — {{ config('app.name') }}</title>
-    @vite(['resources/css/app.css'])
-</head>
-<body class="min-h-screen bg-slate-100 font-sans text-slate-900 p-4">
-    <header class="flex items-center justify-between">
-        <h1 class="text-xl font-bold text-aksen">Menu Scan</h1>
+@extends('scan.layout')
+@section('title', 'Menu Scan')
+@section('content')
+    <header class="flex items-center justify-between gap-3 border-b border-garis bg-white px-4 py-3">
+        <div class="flex flex-col">
+            <h1 class="text-[17px] font-semibold text-aksen">Menu Scan</h1>
+            <span class="text-[13px] text-redup">{{ auth()->user()->name }} · {{ auth()->user()->role->getLabel() }}</span>
+        </div>
         <form method="POST" action="/logout">
             @csrf
-            <button type="submit" class="min-h-11 px-4 rounded-lg border border-slate-300 bg-white">Keluar</button>
+            <button type="submit" class="min-h-11 rounded-[10px] border border-garis bg-white px-4 font-semibold">Keluar</button>
         </form>
     </header>
-    <p class="mt-4">Halo, {{ auth()->user()->name }} ({{ auth()->user()->role->getLabel() }}).</p>
-</body>
-</html>
+    <main class="grid grid-cols-2 gap-3 p-4">
+        @foreach ($modes as $mode => $info)
+            <a href="/scan/{{ $mode }}"
+               class="flex min-h-28 flex-col justify-between gap-2 rounded-2xl border border-garis bg-white p-4 active:border-aksen">
+                <span class="text-lg font-semibold">{{ $info['label'] }}</span>
+                <span class="text-sm text-redup">{{ $info['keterangan'] }}</span>
+            </a>
+        @endforeach
+    </main>
+    @if (auth()->user()->role->bisaAksesPanel())
+        <a href="/admin" class="mx-4 mb-4 text-center text-sm font-semibold text-aksen">Buka panel admin</a>
+    @endif
+@endsection

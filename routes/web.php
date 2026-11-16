@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\LaporanImportController;
+use App\Http\Controllers\ScanPageController;
 use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/login');
@@ -14,9 +15,12 @@ Route::middleware('guest')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::post('/logout', [LoginController::class, 'destroy'])->name('logout');
 
-    Route::view('/scan', 'scan.menu')
-        ->middleware('role:staf,supervisor,admin')
-        ->name('scan');
+    Route::middleware('role:staf,supervisor,admin')->group(function () {
+        Route::get('/scan', [ScanPageController::class, 'menu'])->name('scan');
+        Route::get('/scan/{mode}', [ScanPageController::class, 'show'])
+            ->whereIn('mode', array_keys(ScanPageController::MODES))
+            ->name('scan.mode');
+    });
 
     Route::get('/laporan-import/{laporan}', LaporanImportController::class)
         ->whereUuid('laporan')
