@@ -66,3 +66,14 @@ it('export kartu stok mengikuti filter tanggal', function () {
         ->and(end($xlsx)[0])->toBe('Saldo akhir')
         ->and(end($xlsx))->toContain(12);
 });
+
+it('export pdf ribuan baris tetap ringan untuk request web', function () {
+    $rows = array_map(fn (int $nomor) => [sprintf('A-%02d-%02d', $nomor % 40, $nomor % 5), "SKU-{$nomor}", "Barang dengan nama cukup panjang {$nomor}", 'pcs', $nomor, 0, $nomor], range(1, 3000));
+    $sebelum = memory_get_usage();
+
+    $pdf = ReportExporter::pdf('Stok per Lokasi', 'Semua lokasi', ['Lokasi', 'SKU', 'Barang', 'Satuan', 'Saldo', 'Dipesan', 'Tersedia'], $rows);
+
+    expect($pdf)->toStartWith('%PDF')
+        ->and(memory_get_usage() - $sebelum)->toBeLessThan(32 * 1024 * 1024)
+        ->and(preg_match_all('#/Type\s*/Page[^s]#', $pdf))->toBeGreaterThan(20);
+});

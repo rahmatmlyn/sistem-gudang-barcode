@@ -1,0 +1,4 @@
+barcode,sku,type,unit,factor
+8991000000010,SKU-00001,EAN-13,satuan dasar,1
+8991000000027,SKU-00002,EAN-13,satuan dasar,1
+DUS-SKU-00002,SKU-00002,Code 128,dus,24

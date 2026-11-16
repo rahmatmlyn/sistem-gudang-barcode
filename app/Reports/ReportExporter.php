@@ -2,11 +2,10 @@
 
 namespace App\Reports;
 
-use Barryvdh\DomPDF\Facade\Pdf;
 use OpenSpout\Common\Entity\Row;
 use OpenSpout\Writer\XLSX\Writer;
 
-/** Export laporan ke Excel (openspout) dan PDF (dompdf); keduanya mengembalikan isi file. */
+/** Export laporan ke Excel (openspout) dan PDF (FPDF, TablePdf); keduanya mengembalikan isi file. */
 final class ReportExporter
 {
     /**
@@ -37,8 +36,6 @@ final class ReportExporter
      */
     public static function pdf(string $title, string $subtitle, array $headings, array $rows): string
     {
-        return Pdf::loadView('pdf.laporan', compact('title', 'subtitle', 'headings', 'rows'))
-            ->setPaper('a4', count($headings) > 6 ? 'landscape' : 'portrait')
-            ->output();
+        return (new TablePdf($title, $subtitle, $headings, count($headings) > 6 ? 'L' : 'P'))->render($rows);
     }
 }

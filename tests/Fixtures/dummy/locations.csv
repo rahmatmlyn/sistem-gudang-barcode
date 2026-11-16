@@ -1,0 +1,6 @@
+code,warehouse,type,parent,barcode
+A-01-01,GU,bin,A-01,LOC-A-01-01
+A-01,GU,rak,A,LOC-A-01
+RCV-01,GU,area terima,GU,LOC-RCV-01
+A,GU,zona,GU,LOC-A
+A-01-02,GU,bin,A-01,LOC-A-01-02
