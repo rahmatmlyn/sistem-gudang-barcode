@@ -97,7 +97,7 @@ it('opname: selesai per lokasi lalu ajukan, tanpa qty sistem di respons', functi
     $detail = $this->getJson("/api/scan/documents/{$opn->number}")->assertOk();
     $this->postJson("/api/scan/documents/{$opn->number}/complete")->assertOk();
 
-    expect($detail->getContent())->not->toContain('system')->not->toContain('37');
+    assertTanpaQtySistem($detail->json(), 37);
     expect($opn->fresh()->submitted_at)->not->toBeNull()
         ->and($opn->opnameLocations()->where('status', OpnameLocationStatus::Belum)->count())->toBe(0);
 });

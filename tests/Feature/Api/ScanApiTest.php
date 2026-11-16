@@ -125,7 +125,7 @@ it('respons scan OPN tidak memuat qty sistem (UAT-14)', function () {
     $respons = scan(['type' => 'OPN', 'document_no' => $opn->number, 'barcode' => $this->ean->barcode, 'location' => 'A-01-01'])
         ->assertOk()->assertJson(['baris' => ['qty_scan' => 1]]);
 
-    expect($respons->getContent())->not->toContain('system')->not->toContain('sistem')->not->toContain('37');
+    assertTanpaQtySistem($respons->json(), 37);
 });
 
 it('opname: lokasi di luar dokumen ditolak', function () {

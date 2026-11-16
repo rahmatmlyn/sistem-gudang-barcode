@@ -29,6 +29,16 @@ function sebagai(UserRole $role): User
     return $user;
 }
 
+/** Hitung buta (UAT-14): tidak ada key qty sistem dan tidak ada nilai angka yang sama dengan qty sistem. */
+function assertTanpaQtySistem(array $json, int $qtySistem): void
+{
+    array_walk_recursive($json, function (mixed $value, int|string $key) use ($qtySistem) {
+        expect((string) $key)->not->toContain('system')->not->toContain('sistem');
+        expect($value)->not->toBe($qtySistem);
+    });
+    expect(json_encode($json))->not->toContain('system');
+}
+
 pest()->extend(TestCase::class)
     ->use(DatabaseTruncation::class)
     ->in('Concurrency');
