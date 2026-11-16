@@ -5,7 +5,9 @@ use App\Enums\DocumentType;
 use App\Enums\OpnameLocationStatus;
 use App\Models\Document;
 use App\Models\ItemBarcode;
+use App\Services\DocumentService;
 use App\Services\OpnameService;
+use App\Services\StockService;
 use Laravel\Sanctum\Sanctum;
 use Tests\Support\Gudang;
 
@@ -108,4 +110,24 @@ it('aksi dokumen yang melanggar aturan menjawab JSON dengan kode', function () {
 
     $this->postJson("/api/scan/documents/{$grn->number}/complete")
         ->assertUnprocessable()->assertJson(['status' => 'gagal', 'kode' => 'QTY_TIDAK_COCOK']);
+});
+
+it('putaway baru dibuat dari sisa di area terima setelah putaway lama dibatalkan atau selesai sebagian', function () {
+    Sanctum::actingAs($this->g->staf);
+    $grn = $this->g->dokumen(DocumentType::GRN, [['item' => $this->barang, 'scanned' => 12]]);
+    $this->postJson("/api/scan/documents/{$grn->number}/complete")->assertOk();
+    $pertama = Document::where('number', $this->postJson("/api/scan/documents/{$grn->number}/putaway")->json('data.nomor'))->sole();
+    app(DocumentService::class)->cancel($pertama, $this->g->supervisor, 'Salah lokasi');
+
+    $kedua = Document::where('number', $this->postJson("/api/scan/documents/{$grn->number}/putaway")->assertCreated()->json('data.nomor'))->sole();
+    expect($kedua->id)->not->toBe($pertama->id)
+        ->and($kedua->lines()->sole()->qty_planned)->toBe(12);
+
+    $baris = $kedua->lines()->sole();
+    $baris->update(['to_location_id' => $this->g->binA->id]);
+    app(StockService::class)->reserve($baris, 5);
+    $this->postJson("/api/scan/documents/{$kedua->number}/complete")->assertOk();
+
+    $ketiga = Document::where('number', $this->postJson("/api/scan/documents/{$grn->number}/putaway")->assertCreated()->json('data.nomor'))->sole();
+    expect($ketiga->lines()->sole()->qty_planned)->toBe(7);
 });

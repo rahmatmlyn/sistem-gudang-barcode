@@ -8,6 +8,8 @@ use App\Filament\Resources\StockOpnames\Pages\CreateStockOpname;
 use App\Filament\Resources\StockOpnames\Pages\ViewStockOpname;
 use App\Filament\Resources\StockOpnames\RelationManagers\HasilHitungRelationManager;
 use App\Models\Document;
+use App\Models\User;
+use App\Services\OpnameService;
 use Livewire\Livewire;
 use Tests\Support\Gudang;
 
@@ -89,4 +91,18 @@ it('hasil hitung menampilkan fisik, sistem, dan selisih', function () {
         ->assertTableColumnStateSet('qty_scanned', 8, $baris)
         ->assertTableColumnStateSet('qty_system', 10, $baris)
         ->assertTableColumnStateSet('selisih', -2, $baris);
+});
+
+it('admin tidak bisa membatalkan opname yang diajukan atau membalik penyesuaiannya (aturan 5)', function () {
+    $admin = User::factory()->create(['role' => UserRole::Admin]);
+    $barang = $this->g->barang();
+    $this->g->stokAwal($barang, $this->g->binA, 10);
+    $diajukan = $this->g->opnameDiajukan([[$barang, 8]]);
+    $lain = $this->g->opnameDiajukan([[$barang, 8]]);
+    $adj = app(OpnameService::class)->approve($lain, $this->g->supervisor, 'Rusak');
+
+    expect($admin->can('cancel', $diajukan))->toBeFalse()
+        ->and($admin->can('reverse', $adj))->toBeFalse()
+        ->and($this->g->supervisor->can('reverse', $adj))->toBeTrue()
+        ->and($this->g->supervisor->can('cancel', $diajukan))->toBeFalse();
 });

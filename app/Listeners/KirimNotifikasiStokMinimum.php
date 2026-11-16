@@ -8,7 +8,7 @@ use App\Models\Item;
 use App\Models\StockBalance;
 use App\Models\User;
 use App\Notifications\StokMinimumNotification;
-use Illuminate\Support\Facades\Notification;
+use Throwable;
 
 /**
  * Kirim notifikasi sekali saat stok total barang melintasi batas minimum ke bawah (stok ≤ minimum).
@@ -32,7 +32,19 @@ class KirimNotifikasiStokMinimum
 
             $claimed = Item::query()->whereKey($item->id)->whereNull('min_stock_alerted_at')->update(['min_stock_alerted_at' => now()]);
             if ($claimed === 1) {
-                Notification::send(User::query()->where('role', UserRole::Admin)->get(), new StokMinimumNotification($item, $qty));
+                $this->notifyAdmins(new StokMinimumNotification($item, $qty));
+            }
+        }
+    }
+
+    /** Listener berjalan setelah dokumen tersimpan: email yang gagal dicatat, tidak boleh menggagalkan aksi pengguna. */
+    private function notifyAdmins(StokMinimumNotification $notification): void
+    {
+        foreach (User::query()->where('role', UserRole::Admin)->get() as $admin) {
+            try {
+                $admin->notify($notification);
+            } catch (Throwable $exception) {
+                report($exception);
             }
         }
     }

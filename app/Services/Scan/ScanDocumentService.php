@@ -108,7 +108,10 @@ class ScanDocumentService
         return $document->refresh();
     }
 
-    /** "Selesai, lanjut Putaway": PUT berisi barang yang diterima GRN, asal = lokasi terima. Idempoten. */
+    /**
+     * "Selesai, lanjut Putaway": PUT terbuka untuk GRN ini dipakai ulang; bila tidak ada (dibatalkan, dibalik,
+     * atau selesai sebagian), PUT baru berisi sisa barang GRN yang masih tersedia di lokasi terima.
+     */
     public function createPutaway(Document $grn, User $by): Document
     {
         if ($grn->type !== DocumentType::GRN || $grn->status !== DocumentStatus::Selesai) {
@@ -117,9 +120,17 @@ class ScanDocumentService
 
         return DB::transaction(function () use ($grn, $by) {
             Document::query()->whereKey($grn->id)->lockForUpdate()->first();
-            $existing = Document::query()->where('type', DocumentType::PUT)->where('related_document_id', $grn->id)->first();
-            if ($existing !== null) {
-                return $existing;
+            $open = Document::query()->where('type', DocumentType::PUT)->where('related_document_id', $grn->id)->open()->first();
+            if ($open !== null) {
+                return $open;
+            }
+
+            $remaining = StockMovement::query()->whereIn('document_line_id', $grn->lines()->select('id'))
+                ->selectRaw('item_id, to_location_id, SUM(qty) AS qty')->groupBy('item_id', 'to_location_id')->get()
+                ->map(fn ($row) => [$row->item_id, $row->to_location_id, min((int) $row->qty, $this->stock->available($row->item_id, $row->to_location_id))])
+                ->filter(fn (array $row) => $row[2] > 0);
+            if ($remaining->isEmpty()) {
+                throw new DokumenTidakAktifException("Semua barang penerimaan {$grn->number} sudah di-putaway.");
             }
 
             $put = Document::create([
@@ -127,12 +138,9 @@ class ScanDocumentService
                 'warehouse_id' => $grn->warehouse_id, 'reference' => $grn->number,
                 'related_document_id' => $grn->id, 'created_by' => $by->id,
             ]);
-            StockMovement::query()->whereIn('document_line_id', $grn->lines()->select('id'))
-                ->selectRaw('item_id, to_location_id, SUM(qty) AS qty')->groupBy('item_id', 'to_location_id')->get()
-                ->each(fn ($row) => DocumentLine::create([
-                    'document_id' => $put->id, 'item_id' => $row->item_id,
-                    'from_location_id' => $row->to_location_id, 'qty_planned' => (int) $row->qty,
-                ]));
+            foreach ($remaining as [$itemId, $locationId, $qty]) {
+                DocumentLine::create(['document_id' => $put->id, 'item_id' => $itemId, 'from_location_id' => $locationId, 'qty_planned' => $qty]);
+            }
 
             return $put;
         });

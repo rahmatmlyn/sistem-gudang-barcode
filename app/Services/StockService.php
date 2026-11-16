@@ -270,10 +270,14 @@ class StockService
         }
     }
 
-    /** @return array{0: int, 1: int} */
+    /**
+     * Baris yang belum di-scan (putaway sebagian) tidak menghasilkan movement, jadi lokasinya boleh kosong.
+     *
+     * @return array{0: ?int, 1: ?int}
+     */
     private function bothLocations(DocumentLine $line): array
     {
-        if ($line->from_location_id === null || $line->to_location_id === null) {
+        if ($line->qty_scanned > 0 && ($line->from_location_id === null || $line->to_location_id === null)) {
             throw new InvalidArgumentException('Baris putaway/transfer wajib punya lokasi asal dan tujuan.');
         }
 

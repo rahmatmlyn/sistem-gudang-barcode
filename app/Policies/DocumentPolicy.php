@@ -50,14 +50,21 @@ class DocumentPolicy
         return false;
     }
 
+    /** Opname yang sudah diajukan hanya diputus lewat setujui/tolak Supervisor (aturan 5). */
     public function cancel(User $user, Document $document): bool
     {
-        return $this->viewAny($user) && $document->status->isOpen() && $document->type !== DocumentType::ADJ;
+        return $this->viewAny($user) && $document->status->isOpen() && $document->type !== DocumentType::ADJ
+            && ! ($document->type === DocumentType::OPN && $document->submitted_at !== null);
     }
 
+    /** ADJ hasil approval opname hanya bisa dibalik Supervisor (aturan 5). */
     public function reverse(User $user, Document $document): bool
     {
+        $fromOpname = $document->type === DocumentType::ADJ
+            && $document->relatedDocument()->where('type', DocumentType::OPN)->exists();
+
         return $this->viewAny($user)
+            && (! $fromOpname || $user->hasRole(UserRole::Supervisor))
             && $document->status === DocumentStatus::Selesai
             && $document->type !== DocumentType::OPN
             && ! Document::query()->where('reversal_of_id', $document->id)->exists();

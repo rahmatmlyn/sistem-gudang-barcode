@@ -177,3 +177,18 @@ it('mengirim event StokBerubah untuk barang yang berubah', function () {
 
     Event::assertDispatched(StokBerubah::class, fn (StokBerubah $event) => $event->itemIds === [$barang->id]);
 });
+
+it('putaway sebagian: baris yang belum di-scan tidak menghalangi penyelesaian', function () {
+    [$diputaway, $belum] = [$this->g->barang(), $this->g->barang()];
+    $this->g->stokAwal($diputaway, $this->g->rcv, 5);
+    $this->g->stokAwal($belum, $this->g->rcv, 3);
+    $put = $this->g->dokumen(DocumentType::PUT, [
+        ['item' => $diputaway, 'from' => $this->g->rcv, 'to' => $this->g->binA, 'planned' => 5, 'scanned' => 5],
+        ['item' => $belum, 'from' => $this->g->rcv, 'planned' => 3],
+    ]);
+
+    $this->stok->putaway($put, $this->g->staf);
+
+    expect(Gudang::saldo($diputaway, $this->g->binA))->toBe(5)
+        ->and(Gudang::saldo($belum, $this->g->rcv))->toBe(3);
+});

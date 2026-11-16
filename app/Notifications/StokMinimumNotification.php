@@ -14,7 +14,11 @@ class StokMinimumNotification extends Notification
 {
     public function __construct(public readonly Item $item, public readonly int $qty) {}
 
-    /** @return list<string> */
+    /**
+     * Database sebelum mail: bila email gagal, notifikasi dalam aplikasi sudah tersimpan (lihat KirimNotifikasiStokMinimum).
+     *
+     * @return list<string>
+     */
     public function via(object $notifiable): array
     {
         return ['database', 'mail'];
