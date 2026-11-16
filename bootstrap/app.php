@@ -1,5 +1,6 @@
 <?php
 
+use App\Exceptions\StockRuleException;
 use App\Http\Middleware\EnsureRole;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -15,10 +16,14 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->alias(['role' => EnsureRole::class]);
+        $middleware->statefulApi();
         $middleware->redirectUsersTo(fn (Request $request) => $request->user()->role->halamanAwal());
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
+        $exceptions->render(fn (StockRuleException $exception, Request $request) => $request->is('api/*')
+            ? response()->json(['status' => 'gagal', 'kode' => $exception->errorCode(), 'pesan' => $exception->getMessage()], $exception->httpStatus())
+            : null);
     })->create();
