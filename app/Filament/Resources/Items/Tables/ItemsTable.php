@@ -2,13 +2,16 @@
 
 namespace App\Filament\Resources\Items\Tables;
 
+use App\Filament\Actions\CetakLabelBulkAction;
 use App\Models\Item;
+use App\Services\LabelService;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Collection;
 
 class ItemsTable
 {
@@ -32,6 +35,10 @@ class ItemsTable
             ])
             ->recordActions([
                 EditAction::make(),
+            ])
+            ->toolbarActions([
+                CetakLabelBulkAction::make('label-barang', fn (Collection $items, int $copies) => app(LabelService::class)
+                    ->itemPdf($items->load('barcodes')->flatMap->barcodes, $copies)),
             ]);
     }
 }

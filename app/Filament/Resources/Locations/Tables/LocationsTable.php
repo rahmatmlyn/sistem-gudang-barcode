@@ -3,6 +3,8 @@
 namespace App\Filament\Resources\Locations\Tables;
 
 use App\Enums\LocationType;
+use App\Filament\Actions\CetakLabelBulkAction;
+use App\Services\LabelService;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -10,6 +12,7 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 
 class LocationsTable
 {
@@ -33,6 +36,10 @@ class LocationsTable
             ])
             ->recordActions([
                 EditAction::make(),
+            ])
+            ->toolbarActions([
+                CetakLabelBulkAction::make('label-lokasi', fn (Collection $locations, int $copies) => app(LabelService::class)
+                    ->locationPdf($locations, $copies)),
             ]);
     }
 }
