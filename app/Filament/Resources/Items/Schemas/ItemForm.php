@@ -5,11 +5,13 @@ namespace App\Filament\Resources\Items\Schemas;
 use App\Enums\BarcodeType;
 use App\Rules\BarcodeUnik;
 use App\Rules\Ean13Valid;
+use Filament\Forms\Components\Field;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
@@ -49,7 +51,7 @@ class ItemForm
             ]);
     }
 
-    /** @return list<\Filament\Schemas\Components\Component|\Filament\Forms\Components\Field> */
+    /** @return list<Component|Field> */
     private static function barcodeFields(): array
     {
         return [

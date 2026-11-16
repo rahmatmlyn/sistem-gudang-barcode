@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\LaporanImportController;
 use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/login');
@@ -16,4 +17,9 @@ Route::middleware('auth')->group(function () {
     Route::view('/scan', 'scan.menu')
         ->middleware('role:staf,supervisor,admin')
         ->name('scan');
+
+    Route::get('/laporan-import/{laporan}', LaporanImportController::class)
+        ->whereUuid('laporan')
+        ->middleware('role:admin')
+        ->name('laporan-import.unduh');
 });

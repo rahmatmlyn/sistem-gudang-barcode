@@ -11,6 +11,7 @@ use App\Models\ActivityLog;
 use App\Models\DocumentLine;
 use App\Models\Item;
 use App\Models\ItemBarcode;
+use App\Models\Location;
 use App\Support\Ean13;
 use Filament\Actions\DeleteAction;
 use Filament\Forms\Components\Repeater;
@@ -78,7 +79,7 @@ it('menyimpan ulang barang dengan barcodenya sendiri tidak dianggap duplikat', f
 
 it('barcode barang tidak boleh sama dengan barcode lokasi', function () {
     sebagai(UserRole::Admin);
-    App\Models\Location::factory()->create(['barcode' => 'LOC-A-01']);
+    Location::factory()->create(['barcode' => 'LOC-A-01']);
 
     Livewire::test(CreateItem::class)
         ->fillForm(formBarang([barcodeForm('LOC-A-01')]))

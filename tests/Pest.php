@@ -1,5 +1,7 @@
 <?php
 
+use App\Enums\UserRole;
+use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTruncation;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
@@ -19,9 +21,9 @@ function dalamSavepoint(Closure $fn): Closure
 }
 
 /** Buat pengguna dengan peran tertentu dan login sebagai dia. */
-function sebagai(App\Enums\UserRole $role): App\Models\User
+function sebagai(UserRole $role): User
 {
-    $user = App\Models\User::factory()->create(['role' => $role]);
+    $user = User::factory()->create(['role' => $role]);
     test()->actingAs($user);
 
     return $user;
