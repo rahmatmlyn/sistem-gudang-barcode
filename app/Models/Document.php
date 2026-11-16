@@ -40,6 +40,17 @@ class Document extends Model
         return $this->hasMany(DocumentLine::class);
     }
 
+    /** Baris berlokasi asal, urut kode lokasi lalu SKU: urutan jalan picker (UAT-07). */
+    public function pickingLines(): HasMany
+    {
+        return $this->lines()
+            ->select('document_lines.*')
+            ->join('locations', 'locations.id', '=', 'document_lines.from_location_id')
+            ->join('items', 'items.id', '=', 'document_lines.item_id')
+            ->orderBy('locations.code')
+            ->orderBy('items.sku');
+    }
+
     public function opnameLocations(): HasMany
     {
         return $this->hasMany(OpnameLocation::class);

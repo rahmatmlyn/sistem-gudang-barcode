@@ -12,6 +12,7 @@ use App\Models\Location;
 use App\Models\StockBalance;
 use App\Models\User;
 use App\Models\Warehouse;
+use App\Services\OpnameService;
 use App\Services\StockService;
 use Illuminate\Support\Facades\DB;
 use PHPUnit\Framework\Assert;
@@ -46,6 +47,12 @@ final class Gudang
             User::factory()->create(['role' => UserRole::Staf]),
             User::factory()->create(['role' => UserRole::Supervisor]),
         );
+    }
+
+    public function lokasi(string $code, LocationType $type = LocationType::Bin, ?Location $parent = null): Location
+    {
+        return Location::factory()->for($this->gudang)->ofType($type)
+            ->create(['code' => $code, 'barcode' => "LOC-{$code}", 'parent_id' => $parent?->id]);
     }
 
     public function barang(array $attributes = []): Item
@@ -84,6 +91,22 @@ final class Gudang
             'qty_packed' => $line['packed'] ?? 0,
             'qty_system' => $line['system'] ?? null,
         ]);
+    }
+
+    /**
+     * OPN di binA dengan hasil hitung per barang; lokasi sudah selesai dihitung dan opname sudah diajukan.
+     *
+     * @param  list<array{0: Item, 1: int}>  $hitung  [barang, qty fisik]
+     */
+    public function opnameDiajukan(array $hitung): Document
+    {
+        $opn = $this->dokumen(DocumentType::OPN, array_map(fn (array $baris) => ['item' => $baris[0], 'from' => $this->binA, 'scanned' => $baris[1]], $hitung));
+        $opname = app(OpnameService::class);
+        $opname->setLocations($opn, [$this->binA->id]);
+        $opname->finishLocation($opn, $this->binA, $this->staf, kosong: false);
+        $opname->submit($opn, $this->staf);
+
+        return $opn->fresh();
     }
 
     /** Stok awal lewat jalur resmi: GRN yang diselesaikan langsung ke lokasi tujuan. */
