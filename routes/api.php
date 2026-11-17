@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\ScanController;
 use App\Http\Controllers\Api\ScanDocumentController;
 use App\Http\Controllers\Api\ScanLineController;
 use App\Http\Controllers\Api\StockController;
+use App\Http\Middleware\EnsureTokenUjiScan;
 use App\Http\Middleware\IdempotentRequest;
 use Illuminate\Support\Facades\Route;
 
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
  */
 Route::middleware(['auth:sanctum', 'role:staf,supervisor,admin'])->group(function () {
     Route::post('/scan', ScanController::class);
-    Route::get('/stock', StockController::class);
+    Route::get('/stock', StockController::class)->middleware(EnsureTokenUjiScan::class);
 
     Route::prefix('scan')->middleware(IdempotentRequest::class)->group(function () {
         Route::get('/documents', [ScanDocumentController::class, 'index']);

@@ -7,6 +7,7 @@ use App\Enums\DocumentStatus;
 use App\Enums\DocumentType;
 use App\Enums\LocationType;
 use App\Enums\UserRole;
+use App\Http\Middleware\EnsureTokenUjiScan;
 use App\Models\Document;
 use App\Models\DocumentLine;
 use App\Models\Item;
@@ -64,7 +65,7 @@ class SiapkanUjiScan extends Command
         DocumentLine::create(['document_id' => $out->id, 'item_id' => $item->id, 'from_location_id' => $location->id,
             'qty_planned' => (int) $this->option('rencana')]);
 
-        $token = $staf->createToken('uji-scan')->plainTextToken;
+        $token = $staf->createToken('uji-scan', [EnsureTokenUjiScan::ABILITY])->plainTextToken;
         $args = "--base {$this->option('base')} --token '{$token}' --barcode {$barcode} --location {$location->code} --doc {$out->number}";
         $this->info("Stok tersedia {$item->sku} di {$location->code}: {$stock->available($item->id, $location->id)}");
         $this->info("Dokumen OUT: {$out->number} (rencana {$this->option('rencana')}), token staf: {$staf->username}");

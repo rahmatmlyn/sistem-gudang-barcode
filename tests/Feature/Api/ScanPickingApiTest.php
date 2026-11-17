@@ -115,6 +115,7 @@ it('kirim mengurangi stok dan surat jalan bisa diunduh (UAT-11)', function () {
 it('GET /api/stock mengembalikan qty tersedia', function () {
     $out = pesananDirilis($this->g, $this->barang, 50, 10);
     ambil($out, $this->ean, 4)->assertOk();
+    Sanctum::actingAs($this->g->staf, ['uji-scan']);
 
     $this->getJson("/api/stock?barcode={$this->ean}&location=A-01-01")
         ->assertOk()->assertExactJson(['qty' => 46, 'saldo' => 50, 'dipesan' => 4]);

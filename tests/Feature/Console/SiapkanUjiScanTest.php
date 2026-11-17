@@ -7,6 +7,7 @@ use App\Models\Item;
 use App\Models\Location;
 use App\Services\StockService;
 use Database\Seeders\DatabaseSeeder;
+use Laravel\Sanctum\PersonalAccessToken;
 
 beforeEach(fn () => $this->seed(DatabaseSeeder::class));
 
@@ -34,4 +35,10 @@ it('dijalankan ulang: dokumen uji lama dibatalkan dan stok diset ulang', functio
 
     expect(Document::ofType(DocumentType::OUT)->where('reference', 'UJI-SCAN')->open()->count())->toBe(1)
         ->and(stokUji())->toBe(3);
+});
+
+it('token yang dicetak hanya punya ability uji-scan', function () {
+    $this->artisan('gudang:siapkan-uji-scan')->assertSuccessful();
+
+    expect(PersonalAccessToken::latest('id')->first()->abilities)->toBe(['uji-scan']);
 });

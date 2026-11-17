@@ -8,7 +8,7 @@ use App\Services\StockService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
-/** GET /api/stock?barcode=&location= → qty tersedia (saldo − dicadangkan scan dokumen terbuka), K1. */
+/** GET /api/stock?barcode=&location= → qty tersedia (saldo − dicadangkan scan dokumen terbuka), K1. Hanya token uji (EnsureTokenUjiScan). */
 class StockController
 {
     public function __invoke(Request $request, BarcodeResolver $resolver, StockService $stock): JsonResponse
