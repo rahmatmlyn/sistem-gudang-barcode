@@ -1,7 +1,8 @@
 /**
  * Klien JSON untuk /api/*. Sesi Sanctum (cookie) + token CSRF dari <meta name="csrf-token">.
  * Scan diberi client_scan_id; bila jaringan putus, kiriman diulang dengan id yang sama sehingga server
- * tidak menggandakan qty (UAT-31). Respons HTTP 4xx/5xx adalah jawaban, bukan alasan untuk mengulang.
+ * tidak menggandakan qty (UAT-31). POST/PATCH lain membawa Idempotency-Key dengan cara yang sama.
+ * Respons HTTP 4xx/5xx adalah jawaban, bukan alasan untuk mengulang.
  */
 export function uuid(cryptoImpl = globalThis.crypto) {
     if (typeof cryptoImpl?.randomUUID === 'function') {
@@ -25,7 +26,7 @@ export function createApi({
     onOffline = () => {},
     onOnline = () => {},
 } = {}) {
-    async function request(method, url, body) {
+    async function request(method, url, body, extraHeaders = {}) {
         const response = await fetchImpl(url, {
             method,
             credentials: 'same-origin',
@@ -34,6 +35,7 @@ export function createApi({
                 'Content-Type': 'application/json',
                 'X-Requested-With': 'XMLHttpRequest',
                 'X-CSRF-TOKEN': csrf,
+                ...extraHeaders,
             },
             body: body === undefined ? undefined : JSON.stringify(body),
         });
@@ -57,13 +59,19 @@ export function createApi({
         }
     }
 
+    /** Satu Idempotency-Key per aksi, dipakai ulang di setiap pengulangan (server memutar ulang respons pertama). */
+    function mutate(method, url, body) {
+        const headers = { 'Idempotency-Key': makeId() };
+        return withRetry(() => request(method, url, body, headers));
+    }
+
     return {
         scan(body) {
             const payload = { ...body, client_scan_id: makeId() };
             return withRetry(() => request('POST', '/api/scan', payload));
         },
         get: (url) => withRetry(() => request('GET', url)),
-        post: (url, body = {}) => withRetry(() => request('POST', url, body)),
-        patch: (url, body = {}) => withRetry(() => request('PATCH', url, body)),
+        post: (url, body = {}) => mutate('POST', url, body),
+        patch: (url, body = {}) => mutate('PATCH', url, body),
     };
 }

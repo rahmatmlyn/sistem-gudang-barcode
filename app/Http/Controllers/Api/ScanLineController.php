@@ -16,7 +16,7 @@ class ScanLineController
     public function __invoke(Request $request, DocumentLine $line, ScanDocumentService $documents): JsonResponse
     {
         $data = $request->validate([
-            'delta' => ['required_without:kosong', 'integer', 'not_in:0', 'between:-100000,100000'],
+            'delta' => ['exclude_if:kosong,true', 'required', 'integer', 'not_in:0', 'between:-100000,100000'],
             'kosong' => ['sometimes', 'boolean'],
         ]);
 

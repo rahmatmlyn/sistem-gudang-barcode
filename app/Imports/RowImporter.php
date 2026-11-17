@@ -15,7 +15,7 @@ abstract class RowImporter
     /** @return array<string, mixed> aturan validasi Laravel; kunci = nama kolom */
     abstract protected function rules(array $row): array;
 
-    /** Kunci upsert baris ini; kunci kembar dalam satu file dilaporkan. */
+    /** Kunci upsert baris ini; kunci kembar (peka huruf, sama dengan indeks unik database) dalam satu file dilaporkan. */
     abstract protected function rowKey(array $row): string;
 
     /** Simpan satu baris yang lolos validasi; lempar ImportRowException untuk penolakan aturan bisnis. */
@@ -49,10 +49,9 @@ abstract class RowImporter
                 continue;
             }
 
-            $label = $this->rowKey($row);
-            $key = mb_strtolower($label);
+            $key = $this->rowKey($row);
             if (isset($seen[$key])) {
-                $report->fail($rowNumber, ["{$label} sudah ada di baris {$seen[$key]} pada file ini."]);
+                $report->fail($rowNumber, ["{$key} sudah ada di baris {$seen[$key]} pada file ini."]);
 
                 continue;
             }

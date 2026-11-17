@@ -17,6 +17,7 @@ use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use RuntimeException;
 
 /** Muat data dummy (database/dummy) untuk uji performa dan UAT-29. Hanya untuk lokal/staging. */
 class ImportDummyData extends Command
@@ -46,8 +47,11 @@ class ImportDummyData extends Command
             return self::FAILURE;
         }
 
-        $result = DB::transaction(fn () => Model::withoutEvents(fn () => $this->importAll($path)));
-        if ($result === null) {
+        try {
+            $result = DB::transaction(fn () => Model::withoutEvents(fn () => $this->importAll($path)));
+        } catch (RuntimeException $exception) {
+            $this->error($exception->getMessage().' Tidak ada data yang disimpan.');
+
             return self::FAILURE;
         }
 
@@ -58,7 +62,7 @@ class ImportDummyData extends Command
         return self::SUCCESS;
     }
 
-    /** @return array<string, int>|null jumlah baris per tabel, null bila master gagal */
+    /** @return array<string, int> jumlah baris per tabel; RuntimeException membatalkan seluruh import */
     private function importAll(string $path): ?array
     {
         $warehouseIds = [];
@@ -72,9 +76,7 @@ class ImportDummyData extends Command
 
         $users = $this->importUsers("{$path}/users.csv");
         foreach (['locations' => LocationRowImporter::class, 'items' => ItemRowImporter::class, 'item_barcodes' => ItemBarcodeRowImporter::class] as $file => $importer) {
-            if (! $this->master($file, app($importer), "{$path}/{$file}.csv")) {
-                return null;
-            }
+            $this->master($file, app($importer), "{$path}/{$file}.csv");
         }
 
         $ledger = (new MovementImporter)->import("{$path}/stock_movements.csv", reset($warehouseIds));
@@ -104,19 +106,18 @@ class ImportDummyData extends Command
         return $count;
     }
 
-    private function master(string $name, RowImporter $importer, string $file): bool
+    private function master(string $name, RowImporter $importer, string $file): void
     {
         $report = $importer->import($file);
         if ($report->jumlahGagal() === 0) {
-            return true;
+            return;
         }
 
-        $this->error("Impor {$name} gagal: {$report->ringkasan()}");
         foreach (array_slice($report->gagal, 0, 20, true) as $row => $messages) {
             $this->line("  baris {$row}: ".implode('; ', $messages));
         }
 
-        return false;
+        throw new RuntimeException("Impor {$name} gagal: {$report->ringkasan()}");
     }
 
     private function importBalances(string $file): int

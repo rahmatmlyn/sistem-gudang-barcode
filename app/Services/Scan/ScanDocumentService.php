@@ -6,6 +6,7 @@ use App\Enums\DocumentStatus;
 use App\Enums\DocumentType;
 use App\Enums\OpnameLocationStatus;
 use App\Exceptions\DokumenTidakAktifException;
+use App\Exceptions\MelebihiRencanaException;
 use App\Exceptions\QtyTidakCocokException;
 use App\Models\Document;
 use App\Models\DocumentLine;
@@ -70,6 +71,9 @@ class ScanDocumentService
             }
             if ($line->qty_scanned + $delta < 0) {
                 throw new QtyTidakCocokException('Qty tidak boleh kurang dari 0.');
+            }
+            if ($document->type === DocumentType::GRN && $line->qty_planned > 0 && $line->qty_scanned + $delta > $line->qty_planned) {
+                throw new MelebihiRencanaException("Penerimaan melebihi rencana: rencana {$line->qty_planned}, sudah {$line->qty_scanned}.");
             }
             $line->increment('qty_scanned', $delta);
         });

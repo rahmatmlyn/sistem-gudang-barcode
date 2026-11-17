@@ -155,3 +155,11 @@ it('laporan gagal bisa diekspor sebagai csv baris,pesan', function () {
 
     expect($laporan->toCsv())->toBe("baris,pesan\n2,\"SKU wajib diisi.\"\n");
 });
+
+it('kunci kembar dalam file dibandingkan peka huruf, sama seperti database', function () {
+    $laporan = app(ItemRowImporter::class)->import(Lembar::csv([
+        KOLOM_BARANG, ['SKU-AB', 'Besar', null, 'pcs', 0], ['sku-ab', 'Kecil', null, 'pcs', 0],
+    ]));
+
+    expect($laporan->gagal)->toBe([])->and(Item::count())->toBe(2);
+});

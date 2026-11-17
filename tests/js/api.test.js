@@ -56,3 +56,29 @@ describe('uuid', () => {
         expect(id).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/);
     });
 });
+
+describe('Idempotency-Key', () => {
+    it('reuses one Idempotency-Key across retries of a POST/PATCH and uses a new one per call', async () => {
+        const fetchImpl = vi.fn()
+            .mockRejectedValueOnce(new TypeError('Failed to fetch'))
+            .mockResolvedValueOnce(response(200, {}))
+            .mockResolvedValueOnce(response(200, {}));
+        let n = 0;
+        const api = createApi({ fetchImpl, csrf: 't', sleep: async () => {}, uuid: () => `id-${++n}` });
+
+        await api.patch('/api/scan/lines/1', { delta: 1 });
+        await api.post('/api/scan/documents', { type: 'GRN' });
+
+        const keys = fetchImpl.mock.calls.map(([, init]) => init.headers['Idempotency-Key']);
+        expect(keys).toEqual(['id-1', 'id-1', 'id-2']);
+    });
+
+    it('does not send an Idempotency-Key on GET', async () => {
+        const fetchImpl = vi.fn().mockResolvedValue(response(200, {}));
+        const api = createApi({ fetchImpl, csrf: 't', sleep: async () => {} });
+
+        await api.get('/api/scan/documents?type=GRN');
+
+        expect(fetchImpl.mock.calls[0][1].headers['Idempotency-Key']).toBeUndefined();
+    });
+});
