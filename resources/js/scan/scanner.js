@@ -1,8 +1,10 @@
 /**
  * Input scan untuk scanner keyboard wedge: scanner mengetik barcode lalu Enter.
  * Scan identik yang datang < windowMs setelah scan terakhir yang diterima diabaikan (CLAUDE.md).
+ * sliding (kamera): jendela dihitung dari pembacaan identik terakhir, termasuk yang diabaikan, sehingga
+ * barcode yang terus terlihat di kamera hanya terhitung sekali sampai hilang dari kamera selama windowMs.
  */
-export function createScanGate({ windowMs = 1000, now = () => Date.now() } = {}) {
+export function createScanGate({ windowMs = 1000, now = () => Date.now(), sliding = false } = {}) {
     let lastCode = null;
     let lastAt = -Infinity;
 
@@ -17,6 +19,9 @@ export function createScanGate({ windowMs = 1000, now = () => Date.now() } = {})
             }
             const at = now();
             if (code === lastCode && at - lastAt < windowMs) {
+                if (sliding) {
+                    lastAt = at;
+                }
                 return false;
             }
             lastCode = code;

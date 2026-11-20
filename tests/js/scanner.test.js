@@ -52,3 +52,29 @@ describe('createScanGate', () => {
         expect(gate.accept('   ')).toBe(false);
     });
 });
+
+describe('createScanGate sliding (kamera)', () => {
+    it('counts a barcode held in view only once while it keeps being read', () => {
+        const time = clock();
+        const gate = createScanGate({ now: time.now, sliding: true });
+
+        expect(gate.accept('8991000000011')).toBe(true);
+        for (let frame = 0; frame < 30; frame++) {
+            time.advance(100);
+            expect(gate.accept('8991000000011')).toBe(false);
+        }
+    });
+
+    it('accepts the same barcode again after it was out of view for 1000ms', () => {
+        const time = clock();
+        const gate = createScanGate({ now: time.now, sliding: true });
+
+        gate.accept('X');
+        time.advance(500);
+        gate.accept('X');
+        time.advance(999);
+        expect(gate.accept('X')).toBe(false);
+        time.advance(1000);
+        expect(gate.accept('X')).toBe(true);
+    });
+});
