@@ -87,7 +87,7 @@ php artisan serve
 
 ### 5. Buka halaman scan di HP
 
-1. Di Chrome HP buka `http://localhost:8000/login`.
+1. Di Chrome HP ketik alamat lengkap `http://localhost:8000/login`, termasuk `http://`. Tanpa itu Chrome bisa mencoba HTTPS dan halaman gagal dimuat.
 2. Masuk sebagai `staf01` dengan sandi `password`.
 3. Pilih mode, misalnya **Penerimaan**, lalu buat atau pilih dokumen.
 4. Ketuk **Scan pakai kamera**. Saat Chrome meminta izin kamera, pilih **Izinkan**.
@@ -120,6 +120,7 @@ gagal.
 | `adb: command not found` | adb belum terpasang atau belum ada di PATH. Ulangi langkah 2 |
 | `adb devices` kosong | Kabel hanya untuk mengisi daya, atau USB debugging belum menyala. Ganti kabel, periksa langkah 1. Di HP, ubah mode USB ke **Transfer file** |
 | HP tidak bisa membuka `localhost:8000` | `adb reverse` hilang setelah kabel dicabut atau HP terkunci lama. Jalankan lagi `adb reverse tcp:8000 tcp:8000`. Periksa juga `php artisan serve` masih berjalan |
+| Halaman gagal dimuat, log server menulis `Unsupported SSL request` | Chrome membuka `https://localhost:8000`, padahal server hanya melayani `http://`. Ketik alamat lengkap dengan `http://` di depannya |
 | "Kamera hanya bisa dipakai lewat HTTPS" | Halaman dibuka lewat alamat IP laptop, bukan `localhost`. Buka `http://localhost:8000` |
 | "Kamera tidak bisa dibuka. Izinkan akses kamera" | Izin kamera ditolak. Di Chrome HP ketuk ikon di kiri alamat › **Izin** › **Kamera** › **Izinkan**, lalu muat ulang halaman |
 | Barcode tidak terbaca | Barcode terlalu kecil, buram, atau silau. Dekatkan atau jauhkan perlahan, tambah cahaya, atau perbesar label di layar |
