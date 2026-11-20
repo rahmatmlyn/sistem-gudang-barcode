@@ -5,6 +5,9 @@ penguji, lalu halaman `/scan` dibuka di Chrome HP dan barcode dibaca dengan kame
 
 Cara ini hanya untuk uji awal. UAT-30 (kompatibilitas scanner) tetap diuji dengan scanner USB dan PDA sungguhan.
 
+Setelah HP siap, ikuti skenario uji langkah demi langkah (dengan barcode di setiap langkah) di
+[uat/alur-uji-hp.md](uat/alur-uji-hp.md).
+
 ## Kenapa lewat kabel
 
 Browser hanya mengizinkan kamera di halaman HTTPS atau `localhost`. Perintah `adb reverse` membuat HP membuka
