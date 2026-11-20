@@ -16,7 +16,8 @@ Penyiapan HP dan laptop ada di [panduan-hp-sebagai-scanner.md](../panduan-hp-seb
 | HP | `http://localhost:8000/scan` | `staf01` / `password` |
 | Laptop (panel) | `http://localhost:8000/admin` | `admin` untuk pesanan keluar, `supervisor` untuk opname (pakai jendela penyamaran atau keluar dulu untuk berganti user) |
 
-Cara membuka dokumen ini dengan barcode tampil:
+Cara membuka dokumen ini dengan barcode tampil di layar laptop:
+- **PDF:** buka `docs/uat/alur-uji-hp.pdf`. PDF ini juga bisa dicetak; barcode tetap bisa discan dari kertas.
 - **VS Code:** buka file ini, lalu tekan `Cmd+Shift+V` (Windows: `Ctrl+Shift+V`).
 - **GitHub:** buka file ini di repositori.
 
